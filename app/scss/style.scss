@@ -4,6 +4,102 @@
 @import 'global';
 
 
+.header {
+	padding: 45px 0;
+	
+	&__inner{		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+	display: flex;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__item-link {
+		color: #436372;
+		font-family: Rubik;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 12px;
+	}
+
+}
+
+.logo{
+	position: relative;
+	bottom: 5px;
+}
+
+.nav-user {
+	display: flex;
+	align-items: center;
+
+	&__link-searh{
+		padding: 18px;
+		background-color: $bg-opasit;
+		border-radius: 50%;
+		margin-right: 20px;
+	}
+
+	&__link{
+		position: relative;
+	}
+
+	&__group{
+	display: flex;
+	align-items: center;
+	padding: 21px 42px 13px;
+	background-color: $bg-defaut;
+	border-radius: 100px;
+	margin-right: 20px;
+	}
+
+	&__link-like{
+		margin-right: 50px;
+	}
+
+	&__num{
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		height: 16px;
+		width: 16px;
+		background-color: #fff;
+		text-align: center;
+		font-size: 10px;
+		border-radius: 50%;
+		line-height: 16px;
+	}
+
+	&__link-nine{
+		padding: 10px;
+		background-color: $bg-indtan;
+		border-radius: 50%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
