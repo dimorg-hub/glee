@@ -1,0 +1,31 @@
+$bg-defaut: #fcd7b6;
+$bg-indtan: #a3bbc8;
+$bg-opasit: #a3bbc820;
+
+
+
+
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
+%sans-400{
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+}
+%sans-500{
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 500;
+}
+%sans-700{
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 700;
+}
+%rubik-400{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+%rubik-500{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+}
