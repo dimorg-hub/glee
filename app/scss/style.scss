@@ -514,6 +514,7 @@
 		padding: 13px;
 		background-color: $bg-defaut02;
 		border: none;
+		font-size: 16px;
 	}
 
 	&__inp:hover {
@@ -524,6 +525,10 @@
 	&__inp:focus {
 		background-color: #ccc;
 		outline-color: $bg-defaut;
+	}
+
+	&__label {
+		font-size: 0;
 	}
 
 	&__inp::placeholder {
@@ -537,7 +542,7 @@
 		line-height: 21px;
 		border: none;
 		background-color: $bg-indtan;
-		padding: 13px 17px 14px;
+		padding: 12px 17px 14px;
 		position: relative;
 		bottom: 2px;
 		right: 5px;

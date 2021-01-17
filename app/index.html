@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Glee</title>
+	<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&family=Rubik:wght@400;500&display=swap"
@@ -118,14 +119,14 @@
 			<h2 class="product__title title">Products of the week</h2>
 			<div class="product__filter">
 				<button class="product__btn" type="button" data-filter="all">All</button>
-				<button class="product__btn" type="button">Furnitures</button>
-				<button class="product__btn" type="button">Chairs</button>
-				<button class="product__btn" type="button">Lighting</button>
-				<button class="product__btn" type="button">Decor</button>
+				<button class="product__btn" type="button" data-filter=".wooden-radio">Furnitures</button>
+				<button class="product__btn" type="button" data-filter=".wooden-chair">Chairs</button>
+				<button class="product__btn" type="button" data-filter=".white-chair">Lighting</button>
+				<button class="product__btn" type="button" data-filter=".retro-table">Decor</button>
 			</div>
 			<ul class="product__list">
-				<li class="product__item">
-					<img class="product__img" src="images/Product/1.png" alt="armchair">
+				<li class="product__item mix wooden-radio">
+					<img class="product__img" src="images/Product/1.png" alt="Wooden radio">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -134,8 +135,8 @@
 					<h3 class="product__name">Wooden radio</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/2.png" alt="armchair">
+				<li class="product__item mix wooden-chair">
+					<img class="product__img" src="images/Product/2.png" alt="Wooden chair">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -144,8 +145,8 @@
 					<h3 class="product__name">Wooden chair</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/3.png" alt="armchair">
+				<li class="product__item mix white-chair">
+					<img class="product__img" src="images/Product/3.png" alt="White chair">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -154,8 +155,8 @@
 					<h3 class="product__name">White chair</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/4.png" alt="armchair">
+				<li class="product__item  mix retro-table">
+					<img class="product__img" src="images/Product/4.png" alt="Retro table">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -164,8 +165,8 @@
 					<h3 class="product__name">Retro table</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/5.png" alt="armchair">
+				<li class="product__item mix wooden-radio">
+					<img class="product__img" src="images/Product/5.png" alt="Wooden radio">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -174,8 +175,8 @@
 					<h3 class="product__name">Wooden radio</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/6.png" alt="armchair">
+				<li class="product__item mix wooden-chair">
+					<img class="product__img" src="images/Product/6.png" alt="Wooden chair">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -184,8 +185,8 @@
 					<h3 class="product__name">Wooden chair</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/7.png" alt="armchair">
+				<li class="product__item mix white-chair">
+					<img class="product__img" src="images/Product/7.png" alt="White chair">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -194,8 +195,8 @@
 					<h3 class="product__name">White chair</h3>
 					<span class="product__cost">$29.00</span>
 				</li>
-				<li class="product__item">
-					<img class="product__img" src="images/Product/8.png" alt="armchair">
+				<li class="product__item mix retro-table">
+					<img class="product__img" src="images/Product/8.png" alt="Retro table">
 					<div class="product__icons">
 						<a class="product__icon product__icon-searh" href="#"></a>
 						<a class="product__icon product__icon-shop" href="#"></a>
@@ -220,7 +221,7 @@
 							ADDRESS: 4772 Wines Lane Houston, TX 77032
 						</a>
 						<a class="adress__link" href="tel:8323475843">Telephone: +832-347-5843</a>
-						<a class="adress__link" href="#">Email: contact@Glee.com</a>
+						<a class="adress__link" href="mailto:email@email.com">Email: contact@Glee.com</a>
 					</address>
 				</div>
 				<div class="footer__services services">
@@ -243,8 +244,8 @@
 					<h3 class="sletter__title footer__title">newsletter</h3>
 					<p class="sletter__text">Subscribe by our newsletter and get
 						update protidin.</p>
-					<label>
-						<input class="sletter__inp" placeholder="Email address" type="text">
+					<label class="sletter__label">Email address
+						<input class="sletter__inp" placeholder="Email address" type="email">
 						<button class="sletter__but" type="submit">Subscribe</button>
 					</label>
 				</div>
