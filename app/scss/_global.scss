@@ -1,19 +1,22 @@
-
-
-
-body{
+body {
 	@extend %sans-400;
 }
 
-.container { 
+.container {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 
-.container-in{ 
+.container-in {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.title {
+	@extend %sans-700;
+	font-size: 36px;
+	color: $title;
 }
