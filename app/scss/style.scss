@@ -136,8 +136,6 @@
 
 .smart {
 
-	&__inner {}
-
 	&__item {
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -186,6 +184,398 @@
 		right: 19px;
 		position: absolute;
 	}
+
+	&__btn:hover {
+		background-color: rgb(153, 83, 83);
+	}
+
+	&__btn:active,
+	&__btn:focus {
+		background-color: rgb(83, 39, 39);
+	}
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	transform: translateY(-60px);
+
+	& li:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	& button {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		font-size: 11px;
+		@extend %rubik-500;
+		padding: 0;
+		border: none;
+		outline: 1px solid transparent;
+		transition: background-color 0.4s;
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+
+	& button:focus,
+	& button:hover,
+	& .slick-active button {
+		background-color: #fff;
+	}
+}
+
+//                                              dignity-----------
+
+
+.dignity {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transform: translateY(-30px);
+	margin-bottom: 74px;
+
+	&__item {
+		padding: 48px 125px 46px 224px;
+		background-color: #fcd7b630;
+		position: relative;
+		max-width: 100%;
+		height: 100%;
+	}
+
+	&__item:not(:last-child) {
+		border-right: 1px solid #243f4d10;
+	}
+
+	&__title {
+		@extend %sans-700;
+		color: #414141;
+		font-size: 18px;
+		line-height: 40px;
+	}
+
+	&__text {
+		color: #585858;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	&__item::after {
+		content: "";
+		position: absolute;
+		left: 150px;
+		top: 60px;
+	}
+
+	&__item-sup::after {
+		background-image: url(../images/icon/24-7.svg);
+		width: 50px;
+		height: 50px;
+	}
+
+	&__item-dev::after {
+		background-image: url(../images/icon/delivery.svg);
+		width: 55px;
+		height: 37px;
+	}
+
+	&__item-pay::after {
+		background-image: url(../images/icon/payment.svg);
+		width: 54px;
+		height: 53px;
+	}
+}
+
+
+//                                                                Product
+
+
+.product {
+	text-align: center;
+
+	&__title {
+		margin-bottom: 40px;
+		color: #191919;
+	}
+
+	&__filter {
+		margin-bottom: 80px;
+		@extend %sans-700;
+		font-size: 16px;
+	}
+
+	&__btn {
+		border: none;
+		background-color: transparent;
+		color: #8b8b8b;
+	}
+
+	&__btn:hover {
+		color: #1c1a63;
+	}
+
+	&__btn:active,
+	&__btn:focus {
+		color: #09ff00;
+
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -30px;
+	}
+
+	&__item {
+		padding: 40px 0;
+		margin-right: 30px;
+		margin-bottom: 40px;
+		flex: 22%;
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+		position: relative;
+		z-index: 2;
+	}
+
+	&__img {
+		margin: 0 auto;
+		margin-bottom: 78px;
+	}
+
+	&__name {
+		font-family: "DM Sans";
+		font-weight: 500;
+		line-height: 40px;
+		margin-bottom: 17px;
+	}
+
+	&__cost {
+		@extend %sans-700;
+		color: #a3bbc8;
+		line-height: 40px;
+	}
+
+	&__icons {
+		position: absolute;
+		width: 100%;
+		height: 85%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.4s;
+	}
+
+	&__icons:hover {
+		opacity: 1;
+	}
+
+	&__icon {
+		background-repeat: no-repeat;
+		padding: 17px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: block;
+		background-position: center center;
+		transition: background-color 0.3s;
+	}
+
+	&__icon:active,
+	&__icon:focus {
+		background-color: #ccc;
+		outline-color: #ccc;
+		outline-style: dotted;
+	}
+
+	&__icon:not(:last-child) {
+		margin-right: 16px;
+	}
+
+	&__icon-searh {
+		background-image: url(../images/Product/icon/Forma_1.svg);
+		width: 22px;
+		height: 20px;
+		display: block;
+		transition: background-color 0.3s;
+	}
+
+	&__icon-searh:hover {
+		background-color: #74fc86;
+	}
+
+	&__icon-shop {
+		background-image: url(../images/Product/icon/Forma_2.svg);
+		width: 22px;
+		height: 20px;
+		background-color: $bg-indtan;
+		transition: background-color 0.3s;
+	}
+
+	&__icon-shop:hover {
+		background-color: rgb(125, 160, 255);
+	}
+
+	&__icon-like {
+		background-image: url(../images/Product/icon/Forma_3.svg);
+		width: 22px;
+		height: 20px;
+		transition: background-color 0.3s;
+	}
+
+	&__icon-like:hover {
+		background-color: rgb(255, 179, 179);
+	}
+}
+
+// 													Footer
+
+
+
+
+.footer {
+	padding: 80px 0 40px;
+
+	& a {
+		color: $footer;
+		@extend %rubik-400;
+		transition: color 0.4s;
+		margin-bottom: 15px;
+	}
+
+	& a:hover {
+		color: #09ff00;
+	}
+
+	& a:active,
+	& a:focus {
+		color: #4341b9;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 77px;
+		border-bottom: 1px solid #a3bbc840;
+	}
+
+	&__adress {
+		max-width: 192px;
+	}
+
+	&__logo-img {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		@extend %sans-700;
+		color: #1f2044;
+		font-size: 16px;
+		line-height: 21px;
+		text-transform: uppercase;
+		margin-bottom: 29px;
+	}
+}
+
+.adress {
+	font-size: 14px;
+	line-height: 24px;
+
+	&__link {
+		margin-bottom: 20px;
+		display: block;
+	}
+}
+
+.services__link:not(:last-child) {
+	margin-bottom: 15px;
+	display: block;
+}
+
+.account__link {
+	display: block;
+	margin-bottom: 17px;
+
+}
+
+
+.sletter {
+
+	&__text {
+		margin-bottom: 38px;
+		color: $footer;
+		max-width: 235px;
+	}
+
+	&__inp {
+		padding: 13px;
+		background-color: $bg-defaut02;
+		border: none;
+	}
+
+	&__inp:hover {
+		background-color: #9aa2e6;
+	}
+
+	&__inp:active,
+	&__inp:focus {
+		background-color: #ccc;
+		outline-color: $bg-defaut;
+	}
+
+	&__inp::placeholder {
+		color: #234969;
+		font-size: 12px;
+	}
+
+	&__but {
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 21px;
+		border: none;
+		background-color: $bg-indtan;
+		padding: 13px 17px 14px;
+		position: relative;
+		bottom: 2px;
+		right: 5px;
+	}
+
+	&__but:hover {
+		background-color: rgb(0, 0, 0);
+	}
+
+	&__but:active,
+	&__but:focus {
+		background-color: rgb(255, 0, 0);
+		outline-color: rgb(0, 255, 21);
+	}
+
+
+}
+
+
+.footer__bot {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 34px;
+
+	&-licence {
+		color: $footer;
+	}
+
+	&-link {
+		padding: 0 15px;
+		display: inline-block;
+	}
+
+	&-link:not(:last-child) {
+		border-right: 1px solid $footer;
+	}
+
+
 }
 
 
