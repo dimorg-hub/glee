@@ -6,13 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Glee</title>
 	<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	<header class="header">
-		<h1 class="sr-only">Glee</h1>
 		<div class="container-fluid">
 			<div class="header__inner">
 				<a class="logo">
@@ -41,20 +39,20 @@
 					</ul>
 				</nav>
 				<nav class="nav-user">
-					<button class="nav-user__link nav-user__link--searh" type="button" href="#">
+					<button class="nav-user__link nav-user__link--searh" type="button">
 						<span class="sr-only"> link-searh </span>
 					</button>
 					<div class="nav-user__group">
-						<button class="nav-user__link nav-user__link--like" type="button" href="#">
+						<button class="nav-user__link nav-user__link--like" type="button">
 							<span class="sr-only"> link-like </span>
 							<span class="nav-user__num nav-user__num--like">0</span>
 						</button>
-						<button class="nav-user__link nav-user__link--shop" type="button"="#">
+						<button class="nav-user__link nav-user__link--shop" type="button">
 							<span class="sr-only"> link-shop </span>
 							<span class="nav-user__num nav-user__num--shop">0</span>
 						</button>
 					</div>
-					<button class="nav-user__link nav-user__link--nine" type="button" href="#">
+					<button class="nav-user__link nav-user__link--nine" type="button">
 						<span class="sr-only"> link-nine </span>
 					</button>
 				</nav>
@@ -63,6 +61,7 @@
 	</header>
 
 	<section class="smart">
+		<h1 class="sr-only">Glee</h1>
 		<div class="container-fluid">
 			<div class="smart__inner">
 				<div class="smart__item">
@@ -109,19 +108,25 @@
 				</div>
 			</div>
 			<ul class="smart__dignity dignity">
-				<li class="dignity__item dignity__item--sup">
-					<span class="dignity__title">Support 24/7.</span>
-					<p class="dignity__text">Contact us 24 hours a day,
-						7 days a week.</p>
+				<li class="dignity__item ">
+					<div class="dignity__inner ">
+						<span class="dignity__title dignity__item--sup">Support 24/7.</span>
+						<p class="dignity__text">Contact us 24 hours a day,
+							7 days a week.</p>
+					</div>
 				</li>
-				<li class="dignity__item dignity__item--dev">
-					<span class="dignity__title">Delivery.</span>
-					<p class="dignity__text">Free shipping on all US order.</p>
+				<li class="dignity__item">
+					<div class="dignity__inner">
+						<span class="dignity__title dignity__item--dev">Delivery.</span>
+						<p class="dignity__text">Free shipping on all US order.</p>
+					</div>
 				</li>
-				<li class="dignity__item dignity__item--pay">
-					<span class="dignity__title">100% Payment secure.</span>
-					<p class="dignity__text">We ensure secure payment
-						with PEV.</p>
+				<li class="dignity__item ">
+					<div class="dignity__inner">
+						<span class="dignity__title  dignity__item--pay">100% Payment secure.</span>
+						<p class="dignity__text">We ensure secure payment
+							with PEV.</p>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -131,149 +136,149 @@
 		<div class="container">
 			<div class="controls">
 				<h2 class="controls__title title">Products of the week</h2>
-				<ul class="controls__list controls__list1">
+				<ul class="controls__list">
 					<li class="controls__item">
 						<button class="controls__btn" type="button" data-filter="all">All</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".wooden-radio">Furnitures</button>
+						<button class="controls__btn" type="button" data-filter=".furnitures">Furnitures</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".wooden-chair">Chairs</button>
+						<button class="controls__btn" type="button" data-filter=".chairs">Chairs</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".white-chair">Lighting</button>
+						<button class="controls__btn" type="button" data-filter=".lighting">Lighting</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".retro-table">Decor</button>
+						<button class="controls__btn" type="button" data-filter=".decor">Decor</button>
 					</li>
 				</ul>
 			</div>
 			<ul class="products__list">
-				<li class="products__item mix wooden-radio">
+				<li class="products__item mix furnitures">
 					<div class="products__images">
 						<img class="products__img" src="images/product/1.png" alt="Wooden radio">
 					</div>
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">Wooden radio</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix wooden-chair">
+				<li class="products__item mix chairs">
 					<img class="products__img" src="images/product/2.png" alt="Wooden chair">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">Wooden chair</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix white-chair">
+				<li class="products__item mix lighting">
 					<img class="products__img" src="images/product/3.png" alt="White chair">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">White chair</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item  mix retro-table">
+				<li class="products__item  mix decor">
 					<img class="products__img" src="images/product/4.png" alt="Retro table">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">Retro table</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix wooden-radio">
+				<li class="products__item mix furnitures">
 					<img class="products__img" src="images/product/5.png" alt="Wooden radio">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon</span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">Wooden radio</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix wooden-chair">
+				<li class="products__item mix chairs">
 					<img class="products__img" src="images/product/6.png" alt="Wooden chair">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">Wooden chair</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix white-chair">
+				<li class="products__item mix lighting">
 					<img class="products__img" src="images/product/7.png" alt="White chair">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
 					<h3 class="products__name">White chair</h3>
 					<span class="products__cost">$29.00</span>
 				</li>
-				<li class="products__item mix retro-table">
+				<li class="products__item mix decor">
 					<img class="products__img" src="images/product/8.png" alt="Retro table">
 					<div class="products__icons">
-						<a class="products__icon products__icon--searh" href="#">
+						<a class="products__icon products__icon--searh icon-wh" href="#">
 							<span class="sr-only"> searh-icon </span>
 						</a>
-						<button class="products__icon products__icon--shop" type="button">
+						<button class="products__icon products__icon--shop icon-wh" type="button">
 							<span class="sr-only"> cart-icon </span>
 						</button>
-						<button class="products__icon products__icon--like" type="button">
+						<button class="products__icon products__icon--like icon-wh" type="button">
 							<span class="sr-only"> like-icon </span>
 						</button>
 					</div>
@@ -297,7 +302,7 @@
 					</div>
 					<div class="lamps__item">
 						<img class="lamps__img" src="images/lamp-2.png" alt="Malesuada Tempor Euismod">
-						<div class="lamps__content lamps__content2">
+						<div class="lamps__content lamps-content2">
 							<span class="lamps__title title">Malesuada Tempor Euismod</span>
 							<p class="lamps__text">
 								50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
@@ -314,26 +319,26 @@
 		<div class="container">
 			<div class="controls">
 				<h2 class="controls__title title">New Design</h2>
-				<ul class="controls__list controls__list2">
+				<ul class="controls__list filter2">
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter="all">All</button>
+						<button class="controls__btn controls-btn2" type="button" data-filter="all">All</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".bed">Furnitures</button>
+						<button class="controls__btn controls-btn2" type="button" data-filter=".bed">Furnitures</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".chair">Chairs</button>
+						<button class="controls__btn controls-btn2" type="button" data-filter=".chair">Chairs</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".none">Lighting</button>
+						<button class="controls__btn controls-btn2" type="button" data-filter=".none">Lighting</button>
 					</li>
 					<li class="controls__item">
-						<button class="controls__btn" type="button" data-filter=".sofa">Decor</button>
+						<button class="controls__btn controls-btn2" type="button" data-filter=".sofa">Decor</button>
 					</li>
 				</ul>
 			</div>
 			<ul class="desing__list">
-				<li class="desing__item" mix sofa>
+				<li class="desing__item mix sofa">
 					<div class="desing__content">
 						<span class="desing__title">Beat Flat Pendant
 							<span>Black</span>
@@ -387,8 +392,9 @@
 					</div>
 					<img class="desing__img desing__img--mardgin2" src="images/design/6.png" alt="Beat Flat Pendant">
 				</li>
+			</ul>
 		</div>
-		<a class="desing__video" data-fancybox href="https://www.youtube.com/watch?v=y0wGQZ1Hth0" alt="видео о диванах">
+		<a class="desing__video" data-fancybox href="https://www.youtube.com/watch?v=y0wGQZ1Hth0">
 		</a>
 	</section>
 
@@ -467,20 +473,20 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<div class="footer__address address footer__item">
+				<div class="footer__address address footer-item">
 					<a class="footer__logo logo">
 						<img class="footer__logo-img" src="images/logo.png" alt="logo">
 					</a>
 					<address class="address">
-						<a class="address__link address__br" href="#">
+						<a class="address__link address-br" href="#">
 							<span>address</span>: 4772 Wines Lane Houston, TX 77032
 						</a>
 						<a class="address__link" href="tel:8323475843"><span>telephone</span>: +832-347-5843</a>
 						<a class="address__link" href="mailto:email@email.com"><span>email</span>: contact@Glee.com</a>
 					</address>
 				</div>
-				<div class="footer__services services footer__item">
-					<h2 class="services__title footer__title">services</h2>
+				<div class="footer__services footer-item">
+					<h2 class="services__title footer-title">services</h2>
 					<ul class="services__list">
 						<li class="services__item">
 							<a class="services__link" href="#">About us</a>
@@ -499,8 +505,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer__account account footer__item">
-					<h3 class="account__title footer__title">Account</h3>
+				<div class="footer__account account footer-item">
+					<h3 class="account__title footer-title">Account</h3>
 					<ul class="account__list">
 						<li class="account__item">
 							<a class="account__link" href="#">Your Account</a>
@@ -516,24 +522,25 @@
 						</li>
 					</ul>
 				</div>
-				<form class="footer__sletter sletter footer__item">
-					<h3 class="sletter__title footer__title">newsletter</h3>
+				<form class="sletter footer-item">
+					<h3 class="sletter__title footer-title">newsletter</h3>
 					<p class="sletter__text">Subscribe by our newsletter and get
 						update protidin.</p>
 					<label class="sletter__label">Email address
-						<input class="sletter__inp" placeholder="Email address" type="email" required>
+						<input class="sletter__inp" name="Email" placeholder="Email address" type="email" required>
 					</label>
 					<button class="sletter__but" type="submit">Subscribe</button>
 				</form>
 			</div>
-			<div class="footer-bot">
-				<span class="footer-bot__licence">©2020 CopyRight Example. All rights reserved. </span>
-				<div class="footer-bot__menu">
-					<ul class="footer-bot__list">
-						<li class="footer-bot__item"><a class="footer-bot__link" href="#">Home</a></li>
-						<li class="footer-bot__item"><a class="footer-bot__link" href="#">About</a></li>
-						<li class="footer-bot__item"><a class="footer-bot__link" href="#">Blog</a></li>
-						<li class="footer-bot__item"><a class="footer-bot__link footer-bot__link--pr" href="#">Contact</a>
+			<div class="footer-bottom">
+				<span class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved. </span>
+				<div class="footer-bottom__menu">
+					<ul class="footer-bottom__list">
+						<li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Home</a></li>
+						<li class="footer-bottom__item"><a class="footer-bottom__link" href="#">About</a></li>
+						<li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Blog</a></li>
+						<li class="footer-bottom__item"><a class="footer-bottom__link footer-bottom__link--pr"
+								href="#">Contact</a>
 						</li>
 					</ul>
 				</div>

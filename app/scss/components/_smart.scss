@@ -1,0 +1,105 @@
+.smart {
+
+	&__container {
+		max-width: 1430px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding: 100px 0 55px;
+	}
+
+	&__content {
+		padding-top: 115px;
+		padding-left: 115px;
+	}
+
+	&__inner {
+		background-color: $bg-defaut;
+	}
+
+	&__title {
+		display: block;
+		max-width: 456px;
+		color: $title;
+		@extend %rubik-500;
+		font-size: 72px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		line-height: 1;
+	}
+
+	&__text {
+		max-width: 359px;
+		color: #436372;
+		@extend %rubik-400;
+		font-size: 18px;
+		line-height: 1.66;
+		margin-bottom: 36px;
+	}
+
+	&__btn {
+		padding: 22px 21px 22px;
+		background-color: $bg-indtan;
+		color: #fff;
+		font-size: 15px;
+		@extend %rubik-500;
+		position: relative;
+		display: block;
+		max-width: 200px;
+		border: none;
+		transition: background-color 0.5s;
+	}
+
+	&__btn::after {
+		content: " ";
+		background-image: url(../images/icon/arrow-rigth.png);
+		width: 22px;
+		height: 9px;
+		top: 30px;
+		right: 19px;
+		position: absolute;
+	}
+
+	&__btn:hover {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__btn:active,
+	&__btn:focus {
+		background-color: #a3bbc880;
+	}
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	transform: translateY(-45px);
+	margin-bottom: 30px;
+
+	li:not(:last-child) {
+		margin-right: 13px;
+	}
+
+	button {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		font-size: 11px;
+		@extend %rubik-500;
+		padding: 0;
+		border: none;
+		outline: 1px solid transparent;
+		transition: background-color 0.4s;
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+
+	button:focus,
+	button:hover,
+	& .slick-active button {
+		background-color: #fff;
+	}
+}
