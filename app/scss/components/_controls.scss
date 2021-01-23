@@ -1,0 +1,34 @@
+.controls {
+	text-align: center;
+
+	&__title {
+		margin-bottom: 23px;
+		color: #191919;
+	}
+
+	&__list {
+		margin-bottom: 72px;
+		@extend %sans-700;
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		border: none;
+		background-color: transparent;
+		color: #8b8b8b;
+		margin-right: 16px;
+		transition: color 0.4s;
+	}
+
+	&__btn:hover {
+		color: #1c1a63;
+	}
+
+	&__btn:active,
+	&__btn:focus {
+		color: #2c3d2b;
+
+	}
+}

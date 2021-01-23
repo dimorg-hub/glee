@@ -3,22 +3,15 @@ $(function () {
 		dots: true,
 		arrows: false
 	});
-	// var mixer = mixitup('.products__list');
 
-	var mixer1 = mixitup('.controls__list1', {
-		controls: {
-			scope: 'local'
-		},
+	var mixer1 = mixitup('.products__list', {
 		selectors: {
-			control: '.filter-1'
+			control: '.controls__btn'
 		}
 	});
-	var mixer2 = mixitup('.controls__list2', {
-		controls: {
-			scope: 'local'
-		},
+	var mixer2 = mixitup('.desing__list', {
 		selectors: {
-			control: '.filter-2'
+			control: '.controls-btn2'
 		}
 	});
 
@@ -29,4 +22,4 @@ $(function () {
 });
 
 
-// .products__list
+//
