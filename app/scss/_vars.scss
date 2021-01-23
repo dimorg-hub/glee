@@ -6,27 +6,62 @@ $title: #243f4d;
 $footer: #7b7b7b;
 
 
+%btn {
+	padding: 20px 86px 20px 20px;
+	font-family: 'Rubik';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1;
+	border-radius: 5px;
+	border: 1px solid #436372;
+	background-color: #feefe2;
+	color: #436372;
+	position: relative;
+	transition: background-color 0.4s;
+
+	&::after {
+		content: " ";
+		background-image: url(../images/icon/arrow-rigth-grey.png);
+		width: 22px;
+		height: 9px;
+		top: 23px;
+		right: 21px;
+		position: absolute;
+	}
+
+	&:hover {
+		background-color: #fcd7b6;
+	}
+
+	&:active,
+	&:focus {
+		background-color: #ddab7fab;
+	}
+
+}
+
 %sans-400 {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'DM Sans';
 	font-weight: 400;
 }
 
 %sans-500 {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'DM Sans';
 	font-weight: 500;
 }
 
 %sans-700 {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'DM Sans';
 	font-weight: 700;
 }
 
+
 %rubik-400 {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Rubik';
 	font-weight: 400;
 }
 
 %rubik-500 {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Rubik';
 	font-weight: 500;
 }
