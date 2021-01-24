@@ -27,6 +27,12 @@
 		position: relative;
 	}
 
+	&__item:hover {
+		.products__icons {
+			opacity: 1;
+		}
+	}
+
 	&__img {
 		margin: 0 auto;
 		margin-bottom: 80px;
@@ -38,6 +44,24 @@
 		margin-bottom: -1px;
 		font-size: 16px;
 		letter-spacing: 0px;
+	}
+
+	&__link {
+		position: relative;
+		z-index: 2;
+		text-decoration: none;
+		color: #243f4d;
+		transition: color 0.4s;
+	}
+
+
+	&__link:hover {
+		color: rgba(0, 0, 0, 0.70);
+	}
+
+	&__link:active,
+	&__link:focus {
+		color: rgba(0, 0, 0, 0.50);
 	}
 
 	&__cost {

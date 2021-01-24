@@ -1,6 +1,5 @@
 .desing {
 
-
 	&__list {
 		display: flex;
 		justify-content: center;
@@ -30,6 +29,20 @@
 		font-size: 20px;
 		line-height: 1.2;
 		margin-bottom: 10px;
+	}
+
+	&__link span {
+		transition: color 0.4s;
+	}
+
+
+	&__link span:hover {
+		color: rgba(0, 0, 0, 0.70);
+	}
+
+	&__link span:active,
+	&__link span:focus {
+		color: rgba(0, 0, 0, 0.50);
 	}
 
 	&__type {
