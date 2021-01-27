@@ -1,18 +1,31 @@
 .header {
 	padding: 45px 0;
 
+	@include r(530) {
+		padding: 20px 10px;
+	}
+
+	nav {
+		@include r(530) {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__logo {
+		@include r(530) {
+			display: none;
+		}
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
 	}
 
-	&__menu {
-		position: absolute;
-		top: 64px;
-		left: 49.4%;
-		transform: translate(-50%, -50%);
-	}
 
 	&__item--plus {
 		position: relative;
@@ -23,10 +36,19 @@
 		right: -10px;
 		top: 0;
 		position: absolute;
+
 	}
 
 	&__list {
 		display: flex;
+		position: absolute;
+		top: 20px;
+		left: 49.4%;
+		transform: translate(-50%, -50%);
+
+		@include r(1200) {
+			display: none;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -52,111 +74,117 @@
 		outline-color: $bg-defaut;
 	}
 
-}
 
-.logo {
-	position: relative;
-	bottom: 5px;
-}
-
-.nav-user {
-	display: flex;
-	align-items: center;
-
-
-	&__link {
-		border: none;
-		position: relative;
-		transition: background-color 0.4s;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-
-
-	&__link:hover {
-		background-color: #ccc;
-	}
-
-	&__link:active,
-	&__link:focus {
-		background-color: #fcd7b640;
-		outline-color: transparent;
-	}
-
-	&__group {
-		position: relative;
+	.nav-user {
 		display: flex;
+		align-items: center;
+
+		@include r(530) {
+			max-width: 100%;
+			justify-content: center;
+		}
+
+		&__link {
+			border: none;
+			position: relative;
+			transition: background-color 0.4s;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		&__link:hover {
+			background-color: #ccc;
+		}
+
+		&__link:active,
+		&__link:focus {
+			background-color: #75604e79;
+			outline-color: transparent;
+		}
+
+		&__group {
+			position: relative;
+			display: flex;
+		}
+
+		&__link--searh {
+			background-image: url(../images/icon/searh.svg);
+			width: 16px;
+			height: 16px;
+			padding: 25px;
+			background-color: $bg-opasit;
+			border-radius: 50%;
+			margin-right: 20px;
+
+			@include r(530) {
+				margin-right: 10px;
+			}
+		}
+
+		&__link--like {
+			background-image: url(../images/icon/heart.svg);
+			width: 18px;
+			height: 17px;
+			background-color: $bg-defaut;
+			padding: 30px 45px 18px 43px;
+			border-radius: 30px 0px 0px 30px;
+
+			@include r(530) {}
+		}
+
+		&__link--cart {
+			background-image: url(../images/icon/cart.svg);
+			width: 19px;
+			height: 17px;
+			background-color: $bg-defaut;
+			padding: 30px 48px 18px 43px;
+			border-radius: 0px 30px 30px 0px;
+			margin-right: 20px;
+
+			@include r(530) {
+				margin-right: 8px;
+			}
+		}
+
+		&__link--menu {
+			background-image: url(../images/icon/menu-icon.svg);
+			width: 20px;
+			height: 21px;
+			padding: 26px;
+			background-color: $bg-indtan;
+			border-radius: 50%
+		}
+
+		&__group::after {
+			content: " ";
+			width: 1px;
+			height: 32px;
+			background-color: #fff;
+			opacity: 0.4;
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			transform: translate(-50%, -50%);
+		}
+
+		&__num {
+			position: absolute;
+			height: 16px;
+			width: 16px;
+			background-color: #fff;
+			font-size: 10px;
+			border-radius: 50%;
+			line-height: 1.6;
+			text-align: center;
+			top: 7px;
+		}
+
+		&__num--like {
+			right: 23px;
+		}
+
+		&__num--cart {
+			right: 24px;
+		}
 	}
-
-	&__link--searh {
-		background-image: url(../images/icon/searh.svg);
-		width: 16px;
-		height: 16px;
-		padding: 25px;
-		background-color: $bg-opasit;
-		border-radius: 50%;
-		margin-right: 20px;
-	}
-
-	&__link--like {
-		background-image: url(../images/icon/heart.svg);
-		width: 18px;
-		height: 17px;
-		background-color: $bg-defaut;
-		padding: 30px 45px 18px 43px;
-		border-radius: 30px 0px 0px 30px;
-	}
-
-	&__link--shop {
-		background-image: url(../images/icon/shop.svg);
-		width: 19px;
-		height: 17px;
-		background-color: $bg-defaut;
-		padding: 30px 48px 18px 43px;
-		border-radius: 0px 30px 30px 0px;
-		margin-right: 20px;
-	}
-
-	&__link--nine {
-		background-image: url(../images/icon/menu-icon.svg);
-		width: 20px;
-		height: 21px;
-		padding: 26px;
-		background-color: $bg-indtan;
-		border-radius: 50%
-	}
-
-	&__group::after {
-		content: " ";
-		width: 1px;
-		height: 32px;
-		background-color: #fff;
-		opacity: 0.4;
-		position: absolute;
-		top: 50%;
-		left: 45%;
-		transform: translate(-50%, -50%);
-	}
-
-	&__num {
-		position: absolute;
-		height: 16px;
-		width: 16px;
-		background-color: #fff;
-		font-size: 10px;
-		border-radius: 50%;
-		line-height: 1.6;
-		text-align: center;
-		top: 7px;
-	}
-
-	&__num--like {
-		right: 23px;
-	}
-
-	&__num--shop {
-		right: 24px;
-	}
-
-
 }

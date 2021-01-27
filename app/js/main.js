@@ -11,13 +11,15 @@ $(function () {
 	});
 	var mixer2 = mixitup('.desing__list', {
 		selectors: {
-			control: '.controls-btn2'
+			control: '.controls__btn--2'
 		}
 	});
 
 	$('.partners__inner').slick({
 		arrows: false
 	});
+
+	$('.desing__video').fancybox();
 
 });
 

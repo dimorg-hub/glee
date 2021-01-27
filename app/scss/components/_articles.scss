@@ -1,6 +1,14 @@
 .articles {
 	background: linear-gradient(180deg, rgb(255, 255, 255) 66.5%, rgba(252, 215, 182, 0.2) 33.5%);
 
+	@include r(1200) {
+		background: transparent;
+	}
+
+
+	&__title {
+		font-size: 18px;
+	}
 
 	&__top {
 		display: flex;
@@ -8,11 +16,20 @@
 		align-items: center;
 		margin-bottom: 42px;
 
+		@include r(768) {
+			top: 5px;
+		}
 	}
+
 
 	&__top a {
 		position: relative;
 		top: 5px;
+
+		@include r(768) {
+			top: 0px;
+		}
+
 	}
 
 	&__btn {
@@ -22,18 +39,20 @@
 		padding-right: 25px;
 		position: relative;
 		transition: color 0.5s, transform 0.5s, text-shadow 0.3s;
+
+		@include r(768) {
+			font-size: 14px;
+		}
 	}
 
 	&__btn:hover {
 		color: rgb(133, 132, 132);
-		transform: scale(1.1);
 	}
 
 	&__btn:active,
 	&__btn:focus {
 		text-shadow: 2px 2px 2px#ccc;
 		color: rgb(82, 82, 82);
-		transform: scale(1.2);
 	}
 
 	&__btn::after {
@@ -44,11 +63,30 @@
 		position: absolute;
 		width: 7px;
 		height: 12px;
+
+		@include r(768) {
+			top: 4px;
+		}
 	}
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
+
+		@include r(768) {
+			flex-wrap: wrap;
+			justify-content: center;
+			min-height: 420px;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 20px;
+
+
+		@include r(520) {
+			margin-right: 0px;
+		}
 	}
 
 	&__item {
@@ -62,6 +100,18 @@
 		line-height: 2.35;
 		background-color: #fff;
 		padding-bottom: 18px;
+
+		@include r(768) {
+			min-height: 320px;
+			margin-bottom: 20px;
+			flex: 40%;
+		}
+
+		@include r(520) {
+			min-height: 320px;
+			margin-bottom: 20px;
+			flex: 100%;
+		}
 	}
 
 	&__content {
@@ -100,6 +150,12 @@
 		text-transform: none;
 		padding-bottom: 12px;
 		line-height: 1.25;
+		display: block;
+		transition: color 0.4s;
+
+		@include r(768) {
+			font-size: 14px;
+		}
 	}
 
 	&__border {
@@ -112,8 +168,20 @@
 		margin-right: 31px;
 	}
 
-	&__by {
+	&__aftor {
 		color: #222933;
+		transition: color 0.4s;
 	}
 
+	&__text:hover,
+	&__aftor:hover {
+		color: rgba(0, 0, 0, 0.534);
+	}
+
+	&__text:active,
+	&__text:focus,
+	&__aftor:active,
+	&__aftor:focus {
+		color: rgba(0, 0, 0, 0.788);
+	}
 }

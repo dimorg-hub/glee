@@ -24,7 +24,7 @@ $footer: #7b7b7b;
 		background-image: url(../images/icon/arrow-rigth-grey.png);
 		width: 22px;
 		height: 9px;
-		top: 23px;
+		top: 25px;
 		right: 21px;
 		position: absolute;
 	}
@@ -65,3 +65,19 @@ $footer: #7b7b7b;
 	font-family: 'Rubik';
 	font-weight: 500;
 }
+
+@mixin r($width) {
+	@media only screen and (max-width: $width+ "px") {
+		@content
+	}
+}
+
+;
+
+@mixin rmin($width) {
+	@media only screen and (min-width: $width+ "px") {
+		@content
+	}
+}
+
+;
