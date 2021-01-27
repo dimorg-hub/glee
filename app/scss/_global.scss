@@ -6,6 +6,10 @@ body {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@include r(530) {
+		padding: 0;
+	}
 }
 
 
@@ -33,4 +37,13 @@ body {
 	@extend %sans-700;
 	font-size: 36px;
 	color: $title;
+
+	@include r(820) {
+		font-size: 24px;
+	}
+}
+
+.logo {
+	position: relative;
+	bottom: 5px;
 }

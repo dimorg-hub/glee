@@ -1,0 +1,136 @@
+.dignity {
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-30px);
+	margin-bottom: 30px;
+
+	@include r(1250) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	@include r(850) {}
+
+	&__item {
+		padding: 44px 150px 46px 10px;
+		background-color: #fcd7b630;
+		position: relative;
+		min-height: 171px;
+		height: 100%;
+		width: 100%;
+
+		@include r(1400) {
+			padding: 44px 100px 46px 10px;
+		}
+
+		@include r(1250) {
+			border-right: none;
+			max-width: 50%;
+			padding: 34px 80px 36px 10px;
+			min-height: 171px;
+		}
+
+		@include r(850) {
+			max-width: 100%;
+			padding: 14px 20px 16px 10px;
+			min-height: 70px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+		}
+
+		@include r(420) {
+			max-width: 100%;
+			padding: 5px;
+			min-height: 50px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		max-width: 215px;
+
+		@include r(850) {
+			display: inline-flexbox;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include r(420) {
+			display: block;
+			text-align: center;
+
+		}
+
+	}
+
+
+	&__item:not(:last-child) {
+		border-right: 1px solid #243f4d10;
+
+		@include r(1250) {
+			border-right: none;
+		}
+	}
+
+	&__title {
+		@extend %sans-700;
+		color: #414141;
+		font-size: 18px;
+		line-height: 1.38;
+		position: relative;
+
+		@include r(850) {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	&__text {
+		color: #585858;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.875;
+
+		@include r(850) {
+			min-width: 230px;
+			font-size: 12px;
+			line-height: 1.5;
+		}
+
+		@include r(420) {
+			font-size: 12px;
+			line-height: 1.2;
+		}
+	}
+
+	&__title::after {
+		content: "";
+		position: absolute;
+		left: -70px;
+		top: 0px;
+
+		@include r(420) {
+			display: none;
+
+		}
+	}
+
+	&__title--sup::after {
+		background-image: url(../images/icon/24-7.svg);
+		width: 50px;
+		height: 50px;
+	}
+
+	&__title--dev::after {
+		background-image: url(../images/icon/delivery.svg);
+		width: 55px;
+		height: 37px;
+	}
+
+	&__title--pay::after {
+		background-image: url(../images/icon/payment.svg);
+		width: 54px;
+		height: 53px;
+	}
+}

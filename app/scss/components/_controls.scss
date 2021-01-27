@@ -7,28 +7,49 @@
 	}
 
 	&__list {
+		padding: 0 10px;
 		margin-bottom: 72px;
 		@extend %sans-700;
 		font-size: 16px;
 		display: flex;
 		justify-content: center;
+
+		@include r(820) {
+			font-size: 12px;
+			margin-bottom: 40px;
+		}
+
+		@include r(420) {}
 	}
 
-	&__btn {
+	&__btn,
+	&__btn--2 {
 		border: none;
 		background-color: transparent;
 		color: #8b8b8b;
 		margin-right: 16px;
 		transition: color 0.4s;
+
+		@include r(420) {
+			margin-right: 7px;
+		}
 	}
 
-	&__btn:hover {
+	&__btn:hover,
+	&__btn--2:hover {
 		color: #1c1a63;
 	}
 
 	&__btn:active,
-	&__btn:focus {
+	&__btn--2:active,
+	&__btn:focus,
+	&__btn--2:focus {
 		color: #2c3d2b;
-
+		outline-color: transparent;
 	}
+}
+
+.mixitup-control-active {
+	color: #000;
+	border-bottom: 1px solid #000;
 }
