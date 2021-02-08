@@ -5,9 +5,10 @@
 		background: transparent;
 	}
 
-
 	&__title {
-		font-size: 18px;
+		@include r(630) {
+			font-size: 18px;
+		}
 	}
 
 	&__top {
@@ -21,7 +22,6 @@
 		}
 	}
 
-
 	&__top a {
 		position: relative;
 		top: 5px;
@@ -32,7 +32,7 @@
 
 	}
 
-	&__btn {
+	&__view {
 		color: #262626;
 		@extend %sans-700;
 		font-size: 16px;
@@ -45,17 +45,17 @@
 		}
 	}
 
-	&__btn:hover {
+	&__view:hover {
 		color: rgb(133, 132, 132);
 	}
 
-	&__btn:active,
-	&__btn:focus {
+	&__view:active,
+	&__view:focus {
 		text-shadow: 2px 2px 2px#ccc;
 		color: rgb(82, 82, 82);
 	}
 
-	&__btn::after {
+	&__view::after {
 		content: " ";
 		background-image: url(../images/icon/right-icon.svg);
 		right: 0px;
@@ -84,7 +84,7 @@
 		margin-right: 20px;
 
 
-		@include r(520) {
+		@include r(500) {
 			margin-right: 0px;
 		}
 	}
@@ -107,7 +107,7 @@
 			flex: 40%;
 		}
 
-		@include r(520) {
+		@include r(500) {
 			min-height: 320px;
 			margin-bottom: 20px;
 			flex: 100%;
@@ -166,6 +166,10 @@
 
 	&__date {
 		margin-right: 31px;
+
+		@include r(630) {
+			margin-right: 10px;
+		}
 	}
 
 	&__aftor {

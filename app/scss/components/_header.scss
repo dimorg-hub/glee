@@ -1,12 +1,18 @@
 .header {
-	padding: 45px 0;
+	padding: 45px 5px;
 
-	@include r(530) {
-		padding: 20px 10px;
+	@include r(500) {
+		padding: 30px 10px 10px;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(204, 204, 204, 0.493);
 	}
 
-	nav {
-		@include r(530) {
+	&__menu {
+		@include r(500) {
 			display: flex;
 			margin-left: auto;
 			margin-right: auto;
@@ -14,8 +20,10 @@
 	}
 
 	&__logo {
-		@include r(530) {
-			display: none;
+		@include r(500) {
+			width: 40%;
+			position: relative;
+			z-index: 99;
 		}
 	}
 
@@ -25,7 +33,6 @@
 		align-items: center;
 		position: relative;
 	}
-
 
 	&__item--plus {
 		position: relative;
@@ -37,6 +44,35 @@
 		top: 0;
 		position: absolute;
 
+		@include r(1200) {
+			font-size: 36px;
+			color: #000;
+			right: -25px;
+		}
+	}
+
+	&__link {
+		color: #436372;
+		@extend %rubik-500;
+		font-size: 15px;
+		font-weight: 500;
+		transition: color 0.4s, text-shadow 0.4s;
+
+		@include r(1200) {
+			font-size: 36px;
+			color: #000;
+		}
+	}
+
+	&__link:hover {
+		color: #1729cc;
+		text-shadow: 1px 1px 3px $bg-defaut;
+	}
+
+	&__link:active,
+	&__link:focus {
+		color: #000;
+		outline-color: $bg-defaut;
 	}
 
 	&__list {
@@ -47,39 +83,47 @@
 		transform: translate(-50%, -50%);
 
 		@include r(1200) {
-			display: none;
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			top: 0px;
+			background-color: rgba(51, 51, 51, 0.904);
+			display: block;
+			text-align: center;
+			transform: translateX(-120%);
+			transition: transform 0.5s;
+			padding: 20px 0;
+			z-index: 2;
+		}
+	}
+
+	&__list.active {
+		@include r(1200) {
+			transform: translateX(0%);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			padding-top: 70px;
 		}
 	}
 
 	&__item:not(:last-child) {
 		margin-right: 39px;
-	}
 
-	&__link {
-		color: #436372;
-		@extend %rubik-500;
-		font-size: 15px;
-		font-weight: 500;
-		transition: color 0.4s;
+		@include r(1200) {
+			margin-right: 0px;
+		}
 	}
-
-	&__link:hover {
-		color: #1729cc;
-		text-shadow: 1px 1px 3px $bg-defaut;
-	}
-
-	&__link:active,
-	&__link:focus {
-		color: #000000;
-		outline-color: $bg-defaut;
-	}
-
 
 	.nav-user {
 		display: flex;
 		align-items: center;
+		position: relative;
+		z-index: 99;
 
-		@include r(530) {
+		@include r(500) {
 			max-width: 100%;
 			justify-content: center;
 		}
@@ -105,6 +149,9 @@
 		&__group {
 			position: relative;
 			display: flex;
+			align-items: center;
+
+			@include r(500) {}
 		}
 
 		&__link--searh {
@@ -116,8 +163,11 @@
 			border-radius: 50%;
 			margin-right: 20px;
 
-			@include r(530) {
-				margin-right: 10px;
+			@include r(500) {
+				margin-right: 8px;
+				background-color: rgba(199, 199, 199, 0.726);
+				padding: 13px;
+				margin-left: 10px;
 			}
 		}
 
@@ -129,7 +179,11 @@
 			padding: 30px 45px 18px 43px;
 			border-radius: 30px 0px 0px 30px;
 
-			@include r(530) {}
+			@include r(500) {
+				padding: 16px;
+				border-radius: 50%;
+				margin-right: 8px;
+			}
 		}
 
 		&__link--cart {
@@ -141,8 +195,10 @@
 			border-radius: 0px 30px 30px 0px;
 			margin-right: 20px;
 
-			@include r(530) {
+			@include r(500) {
 				margin-right: 8px;
+				padding: 18px;
+				border-radius: 50%;
 			}
 		}
 
@@ -152,7 +208,12 @@
 			height: 21px;
 			padding: 26px;
 			background-color: $bg-indtan;
-			border-radius: 50%
+			border-radius: 50%;
+
+			@include r(500) {
+				padding: 20px;
+				border-radius: 50%;
+			}
 		}
 
 		&__group::after {
@@ -165,6 +226,10 @@
 			top: 50%;
 			left: 45%;
 			transform: translate(-50%, -50%);
+
+			@include r(500) {
+				width: 0px;
+			}
 		}
 
 		&__num {
@@ -181,10 +246,20 @@
 
 		&__num--like {
 			right: 23px;
+
+			@include r(500) {
+				right: -5px;
+				top: 0px;
+			}
 		}
 
 		&__num--cart {
 			right: 24px;
+
+			@include r(500) {
+				right: -4px;
+				top: 3px;
+			}
 		}
 	}
 }

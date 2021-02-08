@@ -1,0 +1,208 @@
+.team {
+	margin-bottom: 120px;
+
+
+	@include r(1200) {
+		margin-bottom: 90px;
+	}
+
+	@include r(950) {
+		margin-bottom: 60px;
+	}
+
+	@include r(630) {
+		margin-bottom: 20px;
+	}
+
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include r(1200) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.title {
+		margin-bottom: 30px;
+	}
+
+	&__story {
+
+		@include r(1200) {
+			padding-left: 50px;
+			padding-right: 20px;
+		}
+
+		@include r(950) {
+			text-align: center;
+			margin-bottom: 50px;
+			padding-left: 20px;
+		}
+	}
+
+	&__text {
+		max-width: 304px;
+		color: #243f4d;
+		@extend %rubik-400;
+		font-size: 16px;
+		line-height: 1.8;
+		margin-bottom: 40px;
+
+		@include r(1200) {
+			max-width: 100%;
+		}
+
+		@include r(950) {
+			font-size: 14px;
+		}
+	}
+
+	&__link {
+		padding: 19px 60px 19px 18px;
+		color: #fff;
+		background-color: $bg-indtan;
+		border-radius: 5px;
+		font-size: 15px;
+		@extend %rubik-400;
+		position: relative;
+		transition: background-color 0.4s;
+
+		@include r(630) {
+			padding: 14px 40px 14px 13px;
+			font-size: 14px;
+		}
+	}
+
+	&__link:hover {
+		background-color: rgba(71, 71, 71, 0.63);
+	}
+
+	&__link:active,
+	&__link:focus {
+		background-color: rgba(0, 0, 0, 0.596);
+	}
+
+	&__link::after {
+		content: " ";
+		position: absolute;
+		top: 22px;
+		right: 13px;
+		background-image: url(../../images/about/icon/arrow-right.png);
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 11px;
+
+		@include r(630) {
+			top: 16px;
+			right: 10px;
+		}
+	}
+
+	&__gallery {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		margin-right: -30px;
+		max-width: 800px;
+
+		@include r(630) {
+			margin-right: 0px;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+
+	&__gallery-item {
+		margin-right: 30px;
+		margin-bottom: 30px;
+
+		@include r(950) {
+
+			flex: 30%;
+		}
+
+		@include r(630) {
+			flex: 100%;
+			margin-bottom: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+	}
+
+
+	&__card {
+		box-shadow: 0 6px 57px rgba(37, 37, 37, 0.05);
+		padding: 31px 21px 28px 24px;
+		max-width: 325px;
+		transform: translateY(-50px);
+		background-color: #fff;
+		position: relative;
+
+	}
+
+	&__about {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__row {}
+
+	&__name {
+		color: #436372;
+		@extend %sans-700;
+		font-size: 22px;
+		display: block;
+	}
+
+	&__position {
+		@extend %rubik-400;
+		color: #565872;
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.team-icon {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 50%;
+		background-color: #f6f6f6;
+		transition: background-color 0.4s;
+		padding: 18px;
+		top: 33%;
+	}
+
+	&__instagram {
+		right: 23%;
+		width: 18px;
+		height: 18px;
+		background-image: url(../../images/about/icon/insta.svg);
+	}
+
+
+	&__google {
+		background-image: url(../../images/about/icon/google.svg);
+		width: 23px;
+		height: 15px;
+		right: 10%;
+	}
+
+	&__google:hover,
+	&__instagram:hover {
+		background-color: rgba(185, 183, 183, 0.308);
+	}
+
+	&__google:active,
+	&__instagram:active,
+	&__google:focus,
+	&__instagram:focus {
+		background-color: rgba(163, 162, 162, 0.404);
+	}
+}

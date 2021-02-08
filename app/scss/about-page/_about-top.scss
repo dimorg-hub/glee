@@ -1,0 +1,198 @@
+.about {
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		margin-bottom: 120px;
+
+
+		@include r(1200) {
+			margin-bottom: 90px;
+		}
+
+		@include r(950) {
+			margin-bottom: 60px;
+		}
+
+		@include r(500) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__img {
+		margin-right: 50px;
+		max-width: 49%;
+		height: auto;
+
+		@include r(950) {
+			display: none;
+		}
+	}
+
+	&__wpapper {
+		display: flex;
+		margin-bottom: 30px;
+
+
+		@include r(1200) {
+			margin-bottom: 20px;
+		}
+
+		@include r(950) {
+			justify-content: center;
+		}
+	}
+
+	&__12years {
+		color: #a3bbc8;
+		@extend %rubik-700;
+		font-size: 140px;
+		line-height: 0.4;
+		margin-right: 20px;
+
+		@include r(1200) {
+			font-size: 100px;
+			margin-right: 15px;
+			line-height: 1;
+		}
+
+		@include r(950) {
+			padding-left: 50px;
+		}
+	}
+
+	&__3years {
+		display: flex;
+		flex-wrap: wrap;
+		color: #243f4d;
+		font-size: 16px;
+		line-height: 1.8;
+
+
+		@include r(1200) {
+			font-size: 14px;
+			line-height: 2;
+		}
+	}
+
+	&__years {
+		@extend %rubik-400;
+		display: block;
+		width: 100%;
+	}
+
+	.title {
+		margin-bottom: 15px;
+
+		@include r(1200) {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		@include r(950) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		color: #243f4d;
+		font-size: 16px;
+		@extend %rubik-400;
+		line-height: 1.8;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #09316f10;
+
+		@include r(1200) {
+			font-size: 12px;
+			padding-bottom: 20px;
+		}
+
+		@include r(950) {
+			text-align: center;
+		}
+	}
+
+	&__items {
+		display: flex;
+		margin-top: 30px;
+
+		@include r(950) {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		color: #4c4c4c;
+		font-size: 16px;
+		@extend %sans-700;
+		padding-left: 60px;
+		position: relative;
+
+		@include r(1200) {
+			font-size: 12px;
+		}
+
+		@include r(500) {
+			padding-left: 10px;
+		}
+
+		span {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	&__item:not(:last-child) {
+		padding-right: 30px;
+		border-right: 1px solid #09316f10;
+
+		@include r(1200) {
+			padding-right: 5px;
+		}
+
+		@include r(500) {
+			border-right: none;
+		}
+	}
+
+	&__item::before {
+		content: " ";
+		position: absolute;
+		background-repeat: no-repeat;
+		top: 15px;
+		left: 10px;
+		width: 44px;
+		height: 42px;
+
+		@include r(1200) {
+			top: 5px;
+		}
+
+		@include r(500) {
+			display: none;
+		}
+	}
+
+	&__item--projects::before {
+		background-image: url(../../images/about/icon/projects.svg);
+	}
+
+	&__item--revenue::before {
+		background-image: url(../../images/about/icon/revenue.svg);
+	}
+
+	&__item--awards::before {
+		background-image: url(../../images/about/icon/awards.png);
+	}
+
+	&__number {
+		color: #243f4d;
+		font-size: 36px;
+
+		@include r(1200) {
+			font-size: 24px;
+		}
+	}
+}

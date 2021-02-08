@@ -4,12 +4,10 @@
 	transform: translateY(-30px);
 	margin-bottom: 30px;
 
-	@include r(1250) {
+	@include r(1200) {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-	@include r(850) {}
 
 	&__item {
 		padding: 44px 150px 46px 10px;
@@ -19,25 +17,22 @@
 		height: 100%;
 		width: 100%;
 
-		@include r(1400) {
-			padding: 44px 100px 46px 10px;
-		}
 
-		@include r(1250) {
+		@include r(1200) {
 			border-right: none;
 			max-width: 50%;
 			padding: 34px 80px 36px 10px;
 			min-height: 171px;
 		}
 
-		@include r(850) {
+		@include r(950) {
 			max-width: 100%;
 			padding: 14px 20px 16px 10px;
 			min-height: 70px;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.082);
 		}
 
-		@include r(420) {
+		@include r(500) {
 			max-width: 100%;
 			padding: 5px;
 			min-height: 50px;
@@ -50,13 +45,13 @@
 		margin-left: auto;
 		max-width: 215px;
 
-		@include r(850) {
+		@include r(950) {
 			display: inline-flexbox;
 			margin-left: auto;
 			margin-right: auto;
 		}
 
-		@include r(420) {
+		@include r(500) {
 			display: block;
 			text-align: center;
 
@@ -68,7 +63,7 @@
 	&__item:not(:last-child) {
 		border-right: 1px solid #243f4d10;
 
-		@include r(1250) {
+		@include r(1200) {
 			border-right: none;
 		}
 	}
@@ -80,7 +75,7 @@
 		line-height: 1.38;
 		position: relative;
 
-		@include r(850) {
+		@include r(950) {
 			font-size: 14px;
 			line-height: 1.2;
 		}
@@ -92,13 +87,13 @@
 		font-weight: 400;
 		line-height: 1.875;
 
-		@include r(850) {
+		@include r(950) {
 			min-width: 230px;
 			font-size: 12px;
 			line-height: 1.5;
 		}
 
-		@include r(420) {
+		@include r(500) {
 			font-size: 12px;
 			line-height: 1.2;
 		}
@@ -110,7 +105,7 @@
 		left: -70px;
 		top: 0px;
 
-		@include r(420) {
+		@include r(500) {
 			display: none;
 
 		}

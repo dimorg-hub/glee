@@ -7,7 +7,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 
-	@include r(530) {
+	@include r(500) {
 		padding: 0;
 	}
 }
@@ -38,7 +38,7 @@ body {
 	font-size: 36px;
 	color: $title;
 
-	@include r(820) {
+	@include r(950) {
 		font-size: 24px;
 	}
 }
@@ -46,4 +46,41 @@ body {
 .logo {
 	position: relative;
 	bottom: 5px;
+}
+
+
+.directory {
+	background-color: #a3bbc820;
+	text-align: center;
+	padding: 27px 0;
+	margin-bottom: 120px;
+	font-size: 24px;
+
+
+	@include r(1200) {
+		margin-bottom: 60px;
+		padding: 18px 0;
+	}
+
+	@include r(950) {
+		margin-bottom: 30px;
+		padding: 16px 0;
+	}
+
+	&__title {
+		@extend %rubik-300;
+		margin-bottom: 0px;
+		line-height: 1;
+
+		@include r(950) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__location {
+		color: #222933;
+		@extend %rubik-400;
+		opacity: 0.6;
+		font-size: 15px;
+	}
 }

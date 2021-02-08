@@ -1,4 +1,4 @@
-.desing {
+.design {
 
 	&__list {
 		display: flex;
@@ -27,7 +27,7 @@
 		margin-right: 30px;
 		margin-bottom: 34px;
 
-		@include r(800) {
+		@include r(768) {
 			max-width: 370px;
 			max-height: 246px;
 			flex: 40%;
@@ -38,7 +38,7 @@
 		}
 
 
-		@include r(600) {
+		@include r(630) {
 			min-width: 300px;
 			min-height: 200px;
 		}
@@ -54,6 +54,7 @@
 		font-size: 20px;
 		line-height: 1.2;
 		margin-bottom: 10px;
+		max-width: 200px;
 	}
 
 	&__link span {
@@ -81,31 +82,31 @@
 		right: 0;
 		bottom: 36px;
 
-		@include r(800) {
+		@include r(768) {
 			max-width: 50%;
 		}
 	}
 
-	&__img--mardgin1 {
+	&__img--mardgin-sm {
 		right: 56px;
 		bottom: 47px;
 
-		@include r(800) {
+		@include r(768) {
 			right: 10px;
 			bottom: 10px;
 			max-width: 34%;
 		}
 	}
 
-	&__img--mardgin2 {
+	&__img--mardgin-md {
 		bottom: 29px;
 	}
 
-	&__img--mardgin3 {
+	&__img--mardgin-la {
 		right: 30px;
 		bottom: 29px;
 
-		@include r(800) {
+		@include r(768) {
 			right: 10px;
 			bottom: 10px;
 			max-width: 34%;
@@ -125,11 +126,11 @@
 		display: block;
 		margin-bottom: 110px;
 
-		@include r(1000) {
+		@include r(1200) {
 			min-height: 300px;
 		}
 
-		@include r(460) {
+		@include r(500) {
 			display: none;
 		}
 	}

@@ -55,6 +55,10 @@ $footer: #7b7b7b;
 	font-weight: 700;
 }
 
+%rubik-300 {
+	font-family: 'Rubik';
+	font-weight: 300;
+}
 
 %rubik-400 {
 	font-family: 'Rubik';
@@ -64,6 +68,11 @@ $footer: #7b7b7b;
 %rubik-500 {
 	font-family: 'Rubik';
 	font-weight: 500;
+}
+
+%rubik-700 {
+	font-family: 'Rubik';
+	font-weight: 700;
 }
 
 @mixin r($width) {
