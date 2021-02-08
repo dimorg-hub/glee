@@ -98,8 +98,10 @@ function html() {
 // 		.pipe(dest('dist'))
 // }
 
+
+
 function cleanDist() {
-	return del('dist')
+	return del('build')
 }
 
 
@@ -108,6 +110,7 @@ function watching() {
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
 	// watch(['app/**/*.html']).on('change', browserSync.reload);
 	watch(['app/**/*.html'], html);
+	watch(['app/images/**/*'], images);
 }
 
 exports.styles = styles;

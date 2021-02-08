@@ -9,13 +9,45 @@
 
 	@include r(950) {
 
-		.services__list,
-		.account__list,
+		&__services-list,
+		&__account-list,
 		.address,
-		.account,
-		.services {
+		&__account,
+		&__services {
 			display: flex;
 			flex-wrap: wrap;
+		}
+	}
+
+	@include r(500) {
+		&__account {
+			margin-bottom: 10px;
+		}
+
+		&__services-list,
+		&__account-list {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.5s ease-in;
+			display: block;
+
+			li {
+				display: block;
+				width: 100%;
+			}
+
+		}
+
+		&__services-list>*,
+		&__account-list>* {
+			padding: 2px;
+			margin: 0;
+			display: block;
+		}
+
+		.active &__services__list,
+		.active &__account-list {
+			max-height: 200px;
 		}
 	}
 
@@ -41,7 +73,7 @@
 		color: #4341b9;
 	}
 
-	&__item {
+	.footer--item {
 		min-width: 270px;
 		margin-right: 30px;
 
@@ -54,7 +86,6 @@
 		@include r(950) {
 			display: inline-flex;
 			width: 100%;
-
 		}
 	}
 
@@ -94,8 +125,19 @@
 		}
 	}
 
-	.services__item,
-	.account__item {
+	@include r(500) {
+		&__title--active {
+			cursor: pointer;
+			width: 100%;
+		}
+
+		&__title--active:not(:last-child) {
+			margin-top: 10px;
+		}
+	}
+
+	&__services-item,
+	&__account-item {
 		margin-bottom: 12px;
 		display: block;
 		letter-spacing: -1px;
@@ -169,7 +211,7 @@
 			display: block;
 		}
 
-		&__inp {
+		&__input {
 			padding: 9px 8px 8px 8px;
 			background-color: $bg-defaut02;
 			border: none;
@@ -178,12 +220,12 @@
 			transition: background-color 0.4s;
 		}
 
-		&__inp:hover {
+		&__input:hover {
 			background-color: #9aa2e66e;
 		}
 
-		&__inp:active,
-		&__inp:focus {
+		&__input:active,
+		&__input:focus {
 			background-color: rgba(204, 204, 204, 0.623);
 			outline-color: $bg-defaut;
 		}
@@ -192,13 +234,13 @@
 			font-size: 0;
 		}
 
-		&__inp::placeholder {
+		&__input::placeholder {
 			color: #234969;
 			font-size: 12px;
 			padding-left: 10px;
 		}
 
-		&__but {
+		&__btn {
 			color: #ffffff;
 			font-size: 14px;
 			line-height: 1.5;
@@ -213,21 +255,19 @@
 			transition: background-color 0.2s;
 		}
 
-		&__but:hover {
+		&__btn:hover {
 			background-color: rgba(0, 0, 0, 0.425);
 		}
 
-		&__but:active,
-		&__but:focus {
+		&__btn:active,
+		&__btn:focus {
 			background-color: rgba(255, 0, 0, 0.397);
 			outline-color: rgba(153, 83, 83, 0.384);
 		}
 	}
 
-
-
 	//          -------------------------------------- footer__bot------------------------------------
-	.footer-bottom {
+	&__bottom {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -238,39 +278,42 @@
 			justify-content: center;
 			padding-top: 15px;
 		}
+	}
 
-		&__list {
-			display: flex;
+	&__bottom-list {
+		display: flex;
 
-			@include r(950) {
-				margin-bottom: 15px;
-			}
-		}
-
-		&__copy {
-			color: $footer;
-			font-size: 14px;
-			line-height: 2.14;
-
-			@include r(950) {
-				font-size: 12px;
-			}
-		}
-
-		&__item:not(:last-child) {
-			border-right: 1px solid $footer;
-		}
-
-		&__link {
-			letter-spacing: -1px;
-			padding: 0px 14px;
-			display: inline-block;
-			margin-bottom: 0px !important;
-			margin-top: 0px;
-		}
-
-		&__link--pr {
-			padding-right: 5px;
+		@include r(950) {
+			margin-bottom: 15px;
 		}
 	}
+
+	&__bottom-copy {
+		display: block;
+		color: $footer;
+		font-size: 14px;
+		line-height: 2.14;
+
+		@include r(950) {
+			font-size: 12px;
+		}
+	}
+
+	&__bottom-item:not(:last-child) {
+		border-right: 1px solid $footer;
+	}
+
+	&__bottom-link {
+		letter-spacing: -1px;
+		padding: 0px 14px;
+		display: inline-block;
+		margin-bottom: 0px !important;
+		margin-top: 0px;
+	}
+
+	&__bottom-link--pr {
+		padding-right: 5px;
+	}
+
+
 }

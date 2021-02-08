@@ -1,0 +1,111 @@
+.advantages {
+	background-color: #fcd7b6;
+	padding: 171px 0 84px;
+	margin-bottom: 120px;
+
+	@include r(1200) {
+		margin-bottom: 90px;
+		padding: 141px 0 64px;
+	}
+
+	@include r(950) {
+		margin-bottom: 60px;
+		padding: 100px 0 45px;
+	}
+
+	@include r(500) {
+		margin-bottom: 40px;
+		padding: 30px 0 30px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-around;
+
+		@include r(630) {
+			flex-wrap: wrap;
+			margin-bottom: -30px;
+		}
+	}
+
+	&__item {
+		text-align: center;
+		@extend %sans-700;
+		color: #243f4d;
+		font-size: 36px;
+		position: relative;
+
+		@include r(900) {
+			font-size: 24px;
+		}
+
+		@include r(630) {
+			flex: 48%;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__quantity {
+		display: block;
+
+		@include r(630) {
+			margin-bottom: -10px;
+		}
+
+	}
+
+	&__description {
+		font-size: 18px;
+		line-height: 1.77;
+
+		@include r(900) {
+			font-size: 14px;
+		}
+
+		@include r(500) {
+			font-size: 12px;
+		}
+	}
+
+	&__item::before {
+		content: " ";
+		position: absolute;
+		bottom: 100px;
+		left: 30%;
+		background-repeat: no-repeat;
+
+
+		@include r(900) {
+			bottom: 70px;
+		}
+
+		@include r(630) {
+			display: none;
+		}
+	}
+
+
+	&__item--satis::before {
+		background-image: url(../../images/about/icon/w-1.png);
+		width: 74px;
+		height: 60px;
+	}
+
+	&__item--produ::before {
+		background-image: url(../../images/about/icon/w-2.png);
+		width: 73px;
+		height: 52px;
+	}
+
+	&__item--daily::before {
+		background-image: url(../../images/about/icon/w-3.png);
+		width: 79px;
+		height: 64px;
+	}
+
+	&__item--brand::before {
+		background-image: url(../../images/about/icon/w-4.png);
+		width: 61px;
+		height: 64px;
+	}
+}
