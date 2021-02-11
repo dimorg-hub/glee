@@ -104,27 +104,33 @@
 		position: absolute;
 		left: -70px;
 		top: 0px;
+		background-repeat: no-repeat;
+
+		@include r(768) {
+			background-size: 80%;
+			left: -55px;
+		}
 
 		@include r(500) {
 			display: none;
-
 		}
 	}
 
 	&__title--sup::after {
-		background-image: url(../images/icon/24-7.svg);
+		background-image: url(../images/content/icon/24-7.svg);
 		width: 50px;
 		height: 50px;
+
 	}
 
 	&__title--dev::after {
-		background-image: url(../images/icon/delivery.svg);
+		background-image: url(../images/content/icon/delivery.svg);
 		width: 55px;
 		height: 37px;
 	}
 
 	&__title--pay::after {
-		background-image: url(../images/icon/payment.svg);
+		background-image: url(../images/content/icon/payment.svg);
 		width: 54px;
 		height: 53px;
 	}

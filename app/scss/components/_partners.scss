@@ -12,9 +12,22 @@
 		padding: 15px 10px 15px;
 	}
 
+	.slick-track {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.partners__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__img {
-		display: block;
 		padding: 0 50px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }

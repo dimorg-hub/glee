@@ -17,7 +17,7 @@
 			justify-content: center;
 		}
 
-		@include r(500) {
+		@include r(630) {
 			margin-right: 0px;
 			margin-bottom: 20px;
 		}
@@ -44,18 +44,29 @@
 		@include r(768) {
 			margin-bottom: 20px;
 			flex: 50%;
+			min-height: 280px;
 		}
 
-		@include r(500) {
-			flex: 100%;
+		@include r(630) {
+			max-width: 100%;
 			margin-right: 0px;
-
+			flex: 100%;
+			min-height: 100px;
 		}
 	}
 
 	&__img {
 		margin: 0 auto;
 		margin-bottom: 75px;
+
+		@include r(768) {
+			margin-bottom: 45px;
+			margin-top: 15px;
+		}
+
+		@include r(630) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__name {
@@ -94,7 +105,7 @@
 	&__icons {
 		position: absolute;
 		width: 100%;
-		top: 48.5%;
+		top: 50%;
 		left: 0px;
 		display: flex;
 		justify-content: center;
@@ -111,18 +122,22 @@
 	}
 
 	&__icon {
-		background-repeat: no-repeat;
-		padding: 19px;
+		padding: 15px 15px 10px 15px;
 		background-color: #fff;
 		border-radius: 50%;
 		display: block;
-		background-position: center center;
-		transition: background-color 0.4s, transform 0.4s;
+		transition: background-color 0.4s, transform 0.4s, fill 0.4s;
 		border: none;
 	}
 
 	&__icon:hover {
-		transform: scale(1.4);
+		transform: scale(1.1);
+		background-color: $bg-indtan;
+
+		.icon-wh {
+			transform: scale(1.2);
+			fill: #fff;
+		}
 	}
 
 	&__icon:active,
@@ -131,40 +146,19 @@
 	}
 
 	&__icon:not(:last-child) {
-		margin-right: 22px;
+		margin-right: 15px;
 	}
 
 	.icon-wh {
 		width: 22px;
 		height: 20px;
 		transition: background-color 0.3s, background-image 0.3s;
+		fill: #a3bbc8;
+		transition: fill 0.8s;
 	}
 
 	.icon-wh:hover {
-		background-color: $bg-indtan;
+		fill: #fff;
 	}
 
-	&__icon--searh {
-		background-image: url(../images/product/icon/searh.svg);
-	}
-
-	&__icon--searh:hover {
-		background-image: url(../images/Product/icon/searh-white.svg);
-	}
-
-	&__icon--cart {
-		background-image: url(../images/product/icon/cart.svg);
-	}
-
-	&__icon--cart:hover {
-		background-image: url(../images/Product/icon/cart-white.svg);
-	}
-
-	&__icon--like {
-		background-image: url(../images/product/icon/like.svg);
-	}
-
-	&__icon--like:hover {
-		background-image: url(../images/Product/icon/like-white.svg);
-	}
 }

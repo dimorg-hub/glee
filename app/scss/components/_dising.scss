@@ -41,6 +41,8 @@
 		@include r(630) {
 			min-width: 300px;
 			min-height: 200px;
+			max-width: 100%;
+			margin-right: 0px;
 		}
 	}
 
@@ -117,7 +119,7 @@
 
 	&__video {
 		position: relative;
-		background-image: url(../images/video-bg.png);
+		background-image: url(../images/content/video-bg.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -128,16 +130,13 @@
 
 		@include r(1200) {
 			min-height: 300px;
-		}
-
-		@include r(500) {
-			display: none;
+			margin-bottom: 50px;
 		}
 	}
 
 	&__video::after {
 		content: " ";
-		background-image: url(../images/play.png);
+		background-image: url(../images/content/play.png);
 		background-repeat: no-repeat;
 		background-position: center center;
 		width: 98px;
@@ -150,7 +149,7 @@
 
 	&__video::before {
 		content: " ";
-		background-image: url(../images/oreol.png);
+		background-image: url(../images/content/oreol.png);
 		position: absolute;
 		width: 127px;
 		height: 127px;
