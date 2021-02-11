@@ -1,10 +1,7 @@
 $(document).ready(function () {
 	$('.footer__services, .footer__account').on("click", function () {
-		if ($(this).hasClass('active')) {
-			$(this).removeClass("active");
-		} else {
-			$(this).addClass("active");
-		}
+		$('.footer__services, .footer__account').removeClass('active');
+		$(this).addClass("active");
 	});
 });
 
@@ -21,7 +18,39 @@ $(function () {
 	});
 
 	$('.partners__inner').slick({
-		arrows: false
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 5,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4,
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	$('.design__video').fancybox();
