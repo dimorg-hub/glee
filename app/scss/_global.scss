@@ -12,6 +12,12 @@ body {
 	}
 }
 
+.container-log {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 
 .container {
 	max-width: 1200px;
@@ -65,6 +71,10 @@ body {
 	@include r(950) {
 		margin-bottom: 30px;
 		padding: 16px 0;
+	}
+
+	@include r(500) {
+		margin-top: 80px;
 	}
 
 	&__title {

@@ -5,12 +5,31 @@ $(document).ready(function () {
 	});
 });
 
+
+
 $(function () {
+	$(".price__input").ionRangeSlider({
+		type: "double",
+		prefix: "$",
+		onStart: function (data) {
+			$('.price__from').text(data.from);
+			$('.price__to').text(data.to);
+		},
+		onChange: function (data) {
+			$('.price__from').text(data.from);
+			$('.price__to').text(data.to);
+		},
+	});
+
+
 	if (window.innerWidth <= 1200) {
 		$('.nav-user__link--menu,.header__menu a').on("click", function () {
 			$('.nav-user__link--menu,.header__list').toggleClass('active');
 		})
 	}
+
+
+
 
 	$('.smart__inner').slick({
 		dots: true,
@@ -44,7 +63,7 @@ $(function () {
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1

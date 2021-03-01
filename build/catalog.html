@@ -61,103 +61,121 @@
 	</div>
 </header>
 
-<section class="smart">
-	<h1 class="sr-only">Glee</h1>
-	<div class="container-fluid">
-		<div class="smart__inner">
-			<div class="smart__item">
-				<div class="container">
-					<div class="smart__row">
-						<div class="smart__content">
-							<span class="smart__title">smart and trendy</span>
-							<p class="smart__text">
-								Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-							</p>
-							<a class="smart__btn" href="#">Shop Now</a>
-						</div>
-						<img class="smart__img" src="images/content/slider.png" alt="slider img">
-					</div>
-				</div>
-			</div>
-			<div class="smart__item">
-				<div class="container">
-					<div class="smart__row">
-						<div class="smart__content">
-							<span class="smart__title">smart and trendy</span>
-							<p class="smart__text">
-								Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-							</p>
-							<a class="smart__btn" href="#">Shop Now</a>
-						</div>
-						<img class="smart__img" src="images/content/slider.png" alt="slider img">
-					</div>
-				</div>
-			</div>
-			<div class="smart__item">
-				<div class="container">
-					<div class="smart__row">
-						<div class="smart__content">
-							<span class="smart__title">smart and trendy</span>
-							<p class="smart__text">
-								Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-							</p>
-							<a class="smart__btn" href="#">Shop Now</a>
-						</div>
-						<img class="smart__img" src="images/content/slider.png" alt="slider img">
-					</div>
-				</div>
-			</div>
-		</div>
-		<ul class="smart__dignity dignity">
-			<li class="dignity__item ">
-				<div class="dignity__inner dignity__inner--sup ">
-					<span class="dignity__title dignity__title--sup">Support 24/7.</span>
-					<p class="dignity__text">Contact us 24 hours a day,
-						7 days a week.</p>
-				</div>
-			</li>
-			<li class="dignity__item">
-				<div class="dignity__inner">
-					<span class="dignity__title dignity__title--dev">Delivery.</span>
-					<p class="dignity__text">Free shipping on all US order.</p>
-				</div>
-			</li>
-			<li class="dignity__item ">
-				<div class="dignity__inner">
-					<span class="dignity__title  dignity__title--pay">100% Payment secure.</span>
-					<p class="dignity__text">We ensure secure payment
-						with PEV.</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
+<div class="directory">
+	<h2 class="directory__title">Product list 1</h2>
+	<span class="directory__location">Home / Product list 1</span>
+</div>
 
-<section class="products">
+<section class="catalog">
 	<div class="container">
-		<div class="controls">
-			<h2 class="controls__title title">Products of the week</h2>
-			<ul class="controls__list">
-				<li class="controls__item">
-					<button class="controls__btn" type="button" data-filter="all">All</button>
-				</li>
-				<li class="controls__item">
-					<button class="controls__btn" type="button" data-filter=".furnitures">Furnitures</button>
-				</li>
-				<li class="controls__item">
-					<button class="controls__btn" type="button" data-filter=".chairs">Chairs</button>
-				</li>
-				<li class="controls__item">
-					<button class="controls__btn" type="button" data-filter=".lighting">Lighting</button>
-				</li>
-				<li class="controls__item">
-					<button class="controls__btn" type="button" data-filter=".decor">Decor</button>
-				</li>
-			</ul>
-		</div>
-		<ul class="products__list">
-			<li class="products__item mix furnitures">
-				<article class="products__article">
+		<div class="catalog__inner">
+			<div class="catalog__wrapper">
+				<div class="catalog__filters filter">
+					<h3 class="catalog__title">category</h3>
+					<ul class="filter__list">
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter="chair">Chair</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".table">Table</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".lamp">Lamp</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".watch">Watch</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".clock">Clock</button>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog__price price">
+					<h3 class="catalog__title">price</h3>
+					<form class="price__form">
+						<input class="price__input" type="text" value="" data-min="0" data-max="1000" data-from="200"
+							data-to="500" />
+						<label class="price__label">
+							<span class="price__from"></span>
+							<span class="price__to"></span>
+						</label>
+					</form>
+				</div>
+				<div class="catalog__brand brand">
+					<h3 class="catalog__title">brand</h3>
+					<form class="brand__form">
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox" checked>
+							<div class="brand__checkbox">
+								<span>RFL</span>
+								<span class="brand__checkbox--number">(92)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Brothers</span>
+								<span class="brand__checkbox--number">(21)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Regal</span>
+								<span class="brand__checkbox--number">(3)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Nadia</span>
+								<span class="brand__checkbox--number">(14)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Otobi</span>
+								<span class="brand__checkbox--number">(6)</span>
+							</div>
+						</label>
+					</form>
+				</div>
+				<div class="catalog__recent recent">
+					<h3 class="catalog__title">recent products</h3>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img1"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img2"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img3"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="catalog__content">
+				<ul class="products__list">
+					<li class="products__item mix furnitures">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/1.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -184,9 +202,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix chairs">
-				<article class="products__article">
+					</li>
+					<li class="products__item mix chairs">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/2.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -213,9 +231,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix lighting">
-				<article class="products__article">
+					</li>
+					<li class="products__item mix lighting">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/3.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -242,9 +260,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item  mix decor">
-				<article class="products__article">
+					</li>
+					<li class="products__item  mix decor">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/4.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -271,9 +289,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix furnitures">
-				<article class="products__article">
+					</li>
+					<li class="products__item mix furnitures">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/5.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -300,9 +318,38 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix chairs">
-				<article class="products__article">
+					</li>
+					<li class="products__item  mix decor">
+						<article class="products__article">
+	<img class="products__img" src="../images/content/product/4.png" alt="Wooden radio">
+	<div class="products__icons">
+		<a class="products__icon products__icon--searh " href="#">
+			<span class="sr-only"> searh-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#searh"></use>
+			</svg>
+		</a>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> cart-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#cart"></use>
+			</svg>
+		</button>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> like-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#like"></use>
+			</svg>
+		</button>
+	</div>
+	<a class="products__link" href="#">
+		<h3 class="products__name">Retro table</h3>
+	</a>
+	<span class="products__cost">$29.00</span>
+</article>
+					</li>
+					<li class="products__item mix chairs">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/6.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -329,9 +376,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix lighting">
-				<article class="products__article">
+					</li>
+					<li class="products__item mix lighting">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/7.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -358,9 +405,9 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-			<li class="products__item mix decor">
-				<article class="products__article">
+					</li>
+					<li class="products__item mix decor">
+						<article class="products__article">
 	<img class="products__img" src="../images/content/product/8.png" alt="Wooden radio">
 	<div class="products__icons">
 		<a class="products__icon products__icon--searh " href="#">
@@ -387,196 +434,117 @@
 	</a>
 	<span class="products__cost">$29.00</span>
 </article>
-			</li>
-		</ul>
-	</div>
-
-</section>
-
-<div class="products__lamps lamps">
-	<div class="container-fluid">
-		<div class="lamps__inner">
-			<div class="lamps__item">
-				<img class="lamps__img" src="images/content/lamp-1.png" alt="Mirum Notare Tellus">
-				<div class="lamps__content">
-					<span class="lamps__title title">Mirum Notare Tellus</span>
-					<p class="lamps__text">
-						LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27 LED CornLight
-					</p>
-					<a class="lamps__btn" href="#">View More</a>
-				</div>
-			</div>
-			<div class="lamps__item">
-				<img class="lamps__img" src="images/content/lamp-2.png" alt="Malesuada Tempor Euismod">
-				<div class="lamps__content lamps__content--margin">
-					<span class="lamps__title title">Malesuada Tempor Euismod</span>
-					<p class="lamps__text">
-						50W 8000lm Compact Size for HID Street Light Replacement LED CornLight
-					</p>
-					<a class="lamps__btn" href="#">View More</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<section class="design">
-	<div class="container">
-		<div class="controls">
-			<h2 class="controls__title title">New Design</h2>
-			<ul class="controls__list filter2">
-				<li class="controls__item">
-					<button class=" controls__btn--2" type="button" data-filter="all">All</button>
-				</li>
-				<li class="controls__item">
-					<button class=" controls__btn--2" type="button" data-filter=".bed">Furnitures</button>
-				</li>
-				<li class="controls__item">
-					<button class=" controls__btn--2" type="button" data-filter=".chair">Chairs</button>
-				</li>
-				<li class="controls__item">
-					<button class=" controls__btn--2" type="button" data-filter=".none">Lighting</button>
-				</li>
-				<li class="controls__item">
-					<button class=" controls__btn--2" type="button" data-filter=".sofa">Decor</button>
-				</li>
-			</ul>
-		</div>
-		<ul class="design__list">
-			<li class="design__item mix sofa">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Beat Flat Pendant Black
-			</h3>
+					</li>
+					<li class="products__item">
+						<article class="products__article">
+	<img class="products__img" src="../images/content/design/2.png" alt="Wooden radio">
+	<div class="products__icons">
+		<a class="products__icon products__icon--searh " href="#">
+			<span class="sr-only"> searh-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#searh"></use>
+			</svg>
 		</a>
-		<span class="design__type">Classic</span>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> cart-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#cart"></use>
+			</svg>
+		</button>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> like-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#like"></use>
+			</svg>
+		</button>
 	</div>
-	<img class="design__img" src="../images/content/design/1.png" alt="Beat Flat Pendant">
-</article>
-
-			</li>
-			<li class="design__item mix bed">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Lampe Sur Pieds Bamboo
-			</h3>
-		</a>
-		<span class="design__type">Classic</span>
-	</div>
-	<img class="design__img" src="../images/content/design/2.png" alt="Beat Flat Pendant">
-</article>
-			</li>
-			<li class="design__item mix chair">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Lampe Sur Pieds Bamboo
-			</h3>
-		</a>
-		<span class="design__type">Classic</span>
-	</div>
-	<img class="design__img design__img--mardgin-sm" src="../images/content/design/3.png" alt="Beat Flat Pendant">
-</article>
-			</li>
-			<li class="design__item mix bed">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Lampe Sur Pieds Bamboo
-			</h3>
-		</a>
-		<span class="design__type">Classic</span>
-	</div>
-	<img class="design__img design__img--mardgin-md" src="../images/content/design/4.png" alt="Beat Flat Pendant">
-</article>
-			</li>
-			<li class="design__item mix chair">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Lampe Sur Pieds Bamboo
-			</h3>
-		</a>
-		<span class="design__type">Classic</span>
-	</div>
-	<img class="design__img design__img--mardgin-la" src="../images/content/design/5.png" alt="Beat Flat Pendant">
-</article>
-			</li>
-			<li class="design__item mix sofa">
-				<article class="design__article">
-	<div class="design__content">
-		<a class="design__link" href="#">
-			<h3 class="design__title">Lampe Sur Pieds Bamboo
-			</h3>
-		</a>
-		<span class="design__type">Classic</span>
-	</div>
-	<img class="design__img design__img--mardgin-md" src="../images/content/design/6.png" alt="Beat Flat Pendant">
-</article>
-			</li>
-		</ul>
-	</div>
-	<a class="design__video" data-fancybox href="https://www.youtube.com/watch?v=y0wGQZ1Hth0">
+	<a class="products__link" href="#">
+		<h3 class="products__name">Wooden chair</h3>
 	</a>
-</section>
+	<span class="products__cost">$29.00</span>
+</article>
+					</li>
+					<li class="products__item">
+						<article class="products__article">
+	<img class="products__img" src="../images/content/design/5.png" alt="Wooden radio">
+	<div class="products__icons">
+		<a class="products__icon products__icon--searh " href="#">
+			<span class="sr-only"> searh-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#searh"></use>
+			</svg>
+		</a>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> cart-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#cart"></use>
+			</svg>
+		</button>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> like-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#like"></use>
+			</svg>
+		</button>
+	</div>
+	<a class="products__link" href="#">
+		<h3 class="products__name">White chair</h3>
+	</a>
+	<span class="products__cost">$29.00</span>
+</article>
+					</li>
+					<li class="products__item">
+						<article class="products__article">
+	<img class="products__img" src="../images/content/design/4.png" alt="Wooden radio">
+	<div class="products__icons">
+		<a class="products__icon products__icon--searh " href="#">
+			<span class="sr-only"> searh-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#searh"></use>
+			</svg>
+		</a>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> cart-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#cart"></use>
+			</svg>
+		</button>
+		<button class="products__icon products__icon--like" type="button">
+			<span class="sr-only"> like-icon </span>
+			<svg class="icon-wh" style="width: 22px; height: 20px;">
+				<use xlink:href="images/sprite.svg#like"></use>
+			</svg>
+		</button>
+	</div>
+	<a class="products__link" href="#">
+		<h3 class="products__name">Retro table</h3>
+	</a>
+	<span class="products__cost">$29.00</span>
+</article>
+					</li>
+				</ul>
+				<ul class="catalog__content--list">
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter="all">1</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".furnitures">2</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".chairs">3</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".lighting">Next</button>
+					</li>
 
-<section class="articles">
-	<div class="container">
-		<div class="articles__top">
-			<h2 class="articles__title title">Our Insights & Articles</h2>
-			<a class="articles__view" href="#">View All</a>
+				</ul>
+			</div>
 		</div>
-		<ul class="articles__list">
-			<li class="articles__item">
-				<img class="articles__img" src="images/content/articles/1.jpg" alt="Diusmod tempor incididunt">
-				<div class="articles__content">
-					<div>
-						<a class="articles__link" href="#">news</a>
-						<a class="articles__text" href="#">
-							Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-						</a>
-					</div>
-					<div class="articles__border">
-						<time class="articles__date">28 JANUARY, 2020</time>
-						<a class="articles__aftor">by admin</a>
-					</div>
-				</div>
-			</li>
-			<li class="articles__item">
-				<img class="articles__img" src="images/content/articles/2.jpg" alt="Aonsectetur adipisicing elit">
-				<div class="articles__content">
-					<div>
-						<a class="articles__link" href="#">news</a>
-						<a class="articles__text" href="#">
-							Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						</a>
-					</div>
-					<div class="articles__border">
-						<time class="articles__date">28 JANUARY, 2020</time>
-						<a class="articles__aftor">by admin</a>
-					</div>
-				</div>
-			</li>
-			<li class="articles__item">
-				<img class="articles__img" src="images/content/articles/3.jpg" alt="Rncididunt ut labore">
-				<div class="articles__content">
-					<div>
-						<a class="articles__link" href="#">news</a>
-						<a class="articles__text" href="#">
-							Rncididunt ut labore et dolore magna aliqua. Ut enim
-						</a>
-					</div>
-					<div class="articles__border">
-						<time class="articles__date">28 JANUARY, 2020</time>
-						<a class="articles__aftor">by admin</a>
-					</div>
-				</div>
-			</li>
-		</ul>
 	</div>
 </section>
+
+
+
 
 <div class="partners">
 	<div class="container">

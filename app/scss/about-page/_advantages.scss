@@ -15,7 +15,7 @@
 
 	@include r(500) {
 		margin-bottom: 40px;
-		padding: 30px 0 30px;
+		padding: 100px 0 30px 0px;
 	}
 
 	&__items {
@@ -41,7 +41,7 @@
 
 		@include r(630) {
 			flex: 48%;
-			margin-bottom: 30px;
+			margin-bottom: 110px;
 		}
 	}
 
@@ -80,10 +80,21 @@
 		}
 
 		@include r(630) {
-			display: none;
+			left: 38%;
+		}
+
+		@include r(500) {
+			left: 30%;
 		}
 	}
 
+
+	&__item--daily,
+	&__item--brand {
+		@include r(630) {
+			margin-bottom: 15px;
+		}
+	}
 
 	&__item--satis::before {
 		background-image: url(../../images/content/about/icon/w-1.png);

@@ -1,0 +1,243 @@
+@@include('./parts/_doctype-top.html')
+
+@@include('./parts/_header.html')
+
+@@include('./parts/_directory.html',{
+"title": "Product list 1",
+"directory": "Home / Product list 1"
+}
+)
+
+<section class="catalog">
+	<div class="container">
+		<div class="catalog__inner">
+			<div class="catalog__wrapper">
+				<div class="catalog__filters filter">
+					<h3 class="catalog__title">category</h3>
+					<ul class="filter__list">
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter="chair">Chair</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".table">Table</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".lamp">Lamp</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".watch">Watch</button>
+						</li>
+						<li class="filter__item">
+							<button class="filter__btn" type="button" data-filter=".clock">Clock</button>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog__price price">
+					<h3 class="catalog__title">price</h3>
+					<form class="price__form">
+						<input class="price__input" type="text" value="" data-min="0" data-max="1000" data-from="200"
+							data-to="500" />
+						<label class="price__label">
+							<span class="price__from"></span>
+							<span class="price__to"></span>
+						</label>
+					</form>
+				</div>
+				<div class="catalog__brand brand">
+					<h3 class="catalog__title">brand</h3>
+					<form class="brand__form">
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox" checked>
+							<div class="brand__checkbox">
+								<span>RFL</span>
+								<span class="brand__checkbox--number">(92)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Brothers</span>
+								<span class="brand__checkbox--number">(21)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Regal</span>
+								<span class="brand__checkbox--number">(3)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Nadia</span>
+								<span class="brand__checkbox--number">(14)</span>
+							</div>
+						</label>
+						<label class="brand__label">
+							<input class="brand__input" type="checkbox">
+							<div class="brand__checkbox">
+								<span>Otobi</span>
+								<span class="brand__checkbox--number">(6)</span>
+							</div>
+						</label>
+					</form>
+				</div>
+				<div class="catalog__recent recent">
+					<h3 class="catalog__title">recent products</h3>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img1"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img2"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+					<div class="recent__item">
+						<div class="recent__foto recent__foto--img3"></div>
+						<div class="recent__item-content">
+							<span class="recent__name">Perdant lamp</span>
+							<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+							<span class="recent__price">23$</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="catalog__content">
+				<ul class="products__list">
+					<li class="products__item mix furnitures">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/1.png",
+						"name": "Wooden radio",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix chairs">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/2.png",
+						"name": "Wooden chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix lighting">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/3.png",
+						"name": "White chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item  mix decor">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/4.png",
+						"name": "Retro table",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix furnitures">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/5.png",
+						"name": "Wooden radio",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item  mix decor">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/4.png",
+						"name": "Retro table",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix chairs">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/6.png",
+						"name": "Wooden chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix lighting">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/7.png",
+						"name": "White chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item mix decor">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/product/8.png",
+						"name": "Retro table",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/design/2.png",
+						"name": "Wooden chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/design/5.png",
+						"name": "White chair",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+					<li class="products__item">
+						@@include('./parts/_product-item.html',{
+						"src": "../images/content/design/4.png",
+						"name": "Retro table",
+						"cost": "$29.00"
+						}
+						)
+					</li>
+				</ul>
+				<ul class="catalog__content--list">
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter="all">1</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".furnitures">2</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".chairs">3</button>
+					</li>
+					<li class="catalog__content--item">
+						<button class="catalog__content--btn" type="button" data-filter=".lighting">Next</button>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+@@include('./parts/_partners.html')
+
+@@include('./parts/_footer.html')
+
+@@include('./parts/_doctype-bottom.html')
