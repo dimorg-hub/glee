@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glee</title>
+	<link rel="icon" href="images/content/icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container-fluid">
+			<div class="header__inner">
+				<a class="logo header__logo">
+					<img class="logo__img" src="images/content/logo.png" alt="logo">
+				</a>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__item header__item--plus">
+							<a class="header__link" href="index.html">Home</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="about.html">About</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Services</a>
+						</li>
+						<li class="header__item header__item--plus">
+							<a class="header__link" href="catalog.html">Pages</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="catalog2.html">News</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Contact</a>
+						</li>
+					</ul>
+					<div class="nav-user">
+						<button class="nav-user__link nav-user__link--searh" type="button">
+							<span class="sr-only"> link-searh </span>
+						</button>
+						<div class="nav-user__group">
+							<button class="nav-user__link nav-user__link--like" type="button">
+								<span class="sr-only"> link-like </span>
+								<span class="nav-user__num nav-user__num--like">0</span>
+							</button>
+							<button class="nav-user__link nav-user__link--cart" type="button">
+								<span class="sr-only"> link-cart </span>
+								<span class="nav-user__num nav-user__num--cart">0</span>
+							</button>
+						</div>
+						<button class="nav-user__link nav-user__link--menu" type="button">
+							<span class="sr-only"> link-menu </span>
+						</button>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="directory">
+		<h2 class="directory__title">Product list 1</h2>
+		<span class="directory__location">Home / Product list 1</span>
+	</div>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog__inner">
+				<div class="catalog__wrapper">
+					<div class="catalog__filters filter">
+						<h3 class="catalog__title">category</h3>
+						<ul class="filter__list">
+							<li class="filter__item">
+								<button class="filter__btn" type="button" data-filter="chair">Chair</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" type="button" data-filter=".table">Table</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" type="button" data-filter=".lamp">Lamp</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" type="button" data-filter=".watch">Watch</button>
+							</li>
+							<li class="filter__item">
+								<button class="filter__btn" type="button" data-filter=".clock">Clock</button>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog__price price">
+						<h3 class="catalog__title">price</h3>
+						<form class="price__form">
+							<input class="price__input" type="text" value="" data-min="0" data-max="1000" data-from="200"
+								data-to="500" />
+							<label class="price__label">
+								<span class="price__from"></span>
+								<span class="price__to"></span>
+							</label>
+						</form>
+					</div>
+					<div class="catalog__brand brand">
+						<h3 class="catalog__title">brand</h3>
+						<form class="brand__form">
+							<label class="brand__label">
+								<input class="brand__input" type="checkbox" checked>
+								<div class="brand__checkbox">
+									<span>RFL</span>
+									<span class="brand__checkbox--number">(92)</span>
+								</div>
+							</label>
+							<label class="brand__label">
+								<input class="brand__input" type="checkbox">
+								<div class="brand__checkbox">
+									<span>Brothers</span>
+									<span class="brand__checkbox--number">(21)</span>
+								</div>
+							</label>
+							<label class="brand__label">
+								<input class="brand__input" type="checkbox">
+								<div class="brand__checkbox">
+									<span>Regal</span>
+									<span class="brand__checkbox--number">(3)</span>
+								</div>
+							</label>
+							<label class="brand__label">
+								<input class="brand__input" type="checkbox">
+								<div class="brand__checkbox">
+									<span>Nadia</span>
+									<span class="brand__checkbox--number">(14)</span>
+								</div>
+							</label>
+							<label class="brand__label">
+								<input class="brand__input" type="checkbox">
+								<div class="brand__checkbox">
+									<span>Otobi</span>
+									<span class="brand__checkbox--number">(6)</span>
+								</div>
+							</label>
+						</form>
+					</div>
+					<div class="catalog__recent recent">
+						<h3 class="catalog__title">recent products</h3>
+						<div class="recent__item">
+							<div class="recent__foto recent__foto--img1"></div>
+							<div class="recent__item-content">
+								<span class="recent__name">Perdant lamp</span>
+								<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+								<span class="recent__price">23$</span>
+							</div>
+
+						</div>
+						<div class="recent__item">
+							<div class="recent__foto recent__foto--img2"></div>
+							<div class="recent__item-content">
+								<span class="recent__name">Perdant lamp</span>
+								<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+								<span class="recent__price">23$</span>
+							</div>
+
+						</div>
+						<div class="recent__item">
+							<div class="recent__foto recent__foto--img3"></div>
+							<div class="recent__item-content">
+								<span class="recent__name">Perdant lamp</span>
+								<img class="recent__star" src="images/content/recent/stars.png" alt="stars">
+								<span class="recent__price">23$</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="catalog__content">
+					<ul class="products__list">
+						<li class="products__item mix furnitures">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/1.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Wooden radio</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix chairs">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/2.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Wooden chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix lighting">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/3.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">White chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item  mix decor">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/4.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Retro table</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix furnitures">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/5.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Wooden radio</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item  mix decor">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/4.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Retro table</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix chairs">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/6.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Wooden chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix lighting">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/7.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">White chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item mix decor">
+							<article class="products__article">
+								<img class="products__img" src="images/content/product/8.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Retro table</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item">
+							<article class="products__article">
+								<img class="products__img" src="images/content/design/2.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Wooden chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item">
+							<article class="products__article">
+								<img class="products__img" src="images/content/design/5.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">White chair</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+						<li class="products__item">
+							<article class="products__article">
+								<img class="products__img" src="images/content/design/4.png" alt="Wooden radio">
+								<div class="products__icons">
+									<a class="products__icon products__icon--searh " href="#">
+										<span class="sr-only"> searh-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#searh"></use>
+										</svg>
+									</a>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> cart-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</button>
+									<button class="products__icon products__icon--like" type="button">
+										<span class="sr-only"> like-icon </span>
+										<svg class="icon-wh" style="width: 22px; height: 20px;">
+											<use xlink:href="images/sprite.svg#like"></use>
+										</svg>
+									</button>
+								</div>
+								<a class="products__link" href="#">
+									<h3 class="products__name">Retro table</h3>
+								</a>
+								<span class="products__cost">$29.00</span>
+							</article>
+						</li>
+					</ul>
+					<ul class="catalog__content--list">
+						<li class="catalog__content--item">
+							<button class="catalog__content--btn" type="button" data-filter="all">1</button>
+						</li>
+						<li class="catalog__content--item">
+							<button class="catalog__content--btn" type="button" data-filter=".furnitures">2</button>
+						</li>
+						<li class="catalog__content--item">
+							<button class="catalog__content--btn" type="button" data-filter=".chairs">3</button>
+						</li>
+						<li class="catalog__content--item">
+							<button class="catalog__content--btn" type="button" data-filter=".lighting">Next</button>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<div class="partners">
+		<div class="container">
+			<ul class="partners__inner">
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/1.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/2.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/3.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/4.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/5.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/1.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/2.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/3.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/4.png" alt="partners">
+					</a>
+				</li>
+				<li class="partners__item">
+					<a class="" href="#">
+						<img class="partners__img" src="images/content/partner/5.png" alt="partners">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__address footer-item">
+					<a class="footer__logo logo">
+						<img class="footer__logo-img" src="images/content/logo.png" alt="logo">
+					</a>
+					<address class="address">
+						<a class="address__link address-br" href="#">
+							<span>address</span>: 4772 Wines Lane Houston, TX 77032
+						</a>
+						<a class="address__link" href="tel:8323475843"><span>telephone</span>: +832-347-5843</a>
+						<a class="address__link" href="mailto:email@email.com"><span>email</span>: contact@Glee.com</a>
+					</address>
+				</div>
+				<div class="footer-item footer__services">
+					<h3 class="footer__title footer__title--active">services</h3>
+					<ul class="footer__services-list footer__list">
+						<li class="footer__services-item">
+							<a class="footer__services-link" href="#">About us</a>
+						</li>
+						<li class="footer__services-item">
+							<a class="footer__services-link" href="#"> Return Policy</a>
+						</li>
+						<li class="footer__services-item">
+							<a class="footer__services-link" href="#"> Our Blog</a>
+						</li>
+						<li class="footer__services-item">
+							<a class="footer__services-link" href="#">Contact Us</a>
+						</li>
+						<li class="footer__services-item">
+							<a class="footer__services-link" href="terms.html"> Terms & Condition</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__account footer-item">
+					<h3 class="footer__title  footer__title--active">Account</h3>
+					<ul class="footer__account-list footer__list">
+						<li class="footer__account-item">
+							<a class="footer__account-link" href="#">Your Account</a>
+						</li>
+						<li class="footer__account-item">
+							<a class="footer__account-link" href="#">Checkout</a>
+						</li>
+						<li class="footer__account-item">
+							<a class="footer__account-link" href="log-in.html">Login</a>
+						</li>
+						<li class="footer__account-item">
+							<a class="footer__account-link" href="#">Register</a>
+						</li>
+					</ul>
+				</div>
+				<form class="sletter footer-item">
+					<h3 class="footer__title">newsletter</h3>
+					<p class="sletter__text">Subscribe by our newsletter and get
+						update protidin.</p>
+					<div class="sletter__wrapper">
+						<label class="sletter__label">Email address
+							<input class="sletter__input" name="Email" placeholder="Email address" type="email" required>
+						</label>
+						<button class="sletter__btn" type="submit">Subscribe</button>
+					</div>
+				</form>
+			</div>
+			<div class="footer__bottom">
+				<span class="footer__bottom-copy">©2020 CopyRight Example. All rights reserved. </span>
+				<div class="footer__bottom-menu">
+					<ul class="footer__bottom-list">
+						<li class="footer__bottom-item">
+							<a class="footer__bottom-link" href="#">Home</a>
+						</li>
+						<li class="footer__bottom-item">
+							<a class="footer__bottom-link" href="#">About</a>
+						</li>
+						<li class="footer__bottom-item">
+							<a class="footer__bottom-link" href="#">Blog</a>
+						</li>
+						<li class="footer__bottom-item">
+							<a class="footer__bottom-link footer__bottom-link--pr" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
